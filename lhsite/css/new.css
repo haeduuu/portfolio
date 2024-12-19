@@ -1,0 +1,277 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sidemenu.css);
+@import url(../css/leftmenu.css);
+
+
+html, body {font-family: "Noto Sans KR", sans-serif;}
+ *{margin: 0; padding: 0;}
+ul, li, ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+#visual {
+    position: relative;
+    width: 100%;
+    top: -100px;
+    
+}
+
+#visual img {
+    width: 100%;
+    }
+
+#container {
+    width: 1200px; 
+    height: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#container .subtit {
+    position: relative;
+    width: 1200px; 
+    padding-top: 70px;
+    border-bottom: 2px solid #348b34;}
+
+#container .subtit h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom:60px;
+    padding-left: 30px;
+}
+
+#container .subtit > ul {
+    position: absolute;
+    color: #333;
+    bottom: 30px;
+    left: 30px;
+    font-size: 13px;
+    display: flex;}
+
+#container .subtit > ul > li {
+    margin-right: 5px;
+}
+
+#container .subtit > ul > li:hover {
+    font-weight: 600;
+}
+
+#container .subtit > ul > li:first-child::after,
+#container .subtit > ul > li:nth-child(2)::after {
+    content: ' >';
+    color: #8a8a8a;
+    margin: 5px;
+}
+
+#container .contents {
+    width: 1200px; 
+    float: left; 
+    position: relative;
+}
+
+
+
+.rightmenu {
+    width: 950px; 
+    height: 750px; 
+    
+    position: absolute;
+    right: 0;
+
+    
+
+    
+
+}
+
+.rightmenu .cont1 {
+    width: 950px; 
+    height: 600px; 
+    position: relative;      
+   
+    right: 0;
+    top: 50px;
+
+}
+
+.tbl {
+    width: 950px;
+    border-collapse: collapse;    
+    
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.tbl td{
+    border-collapse: collapse;
+    border-bottom: 1px solid #dbdbdb;    
+    padding: 15px 10px 15px 10px;    
+    color: #333;
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.tbl td a:hover {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.tbl td img {width: 25%;}
+
+.tbl th {
+    border-collapse: collapse;
+    border-top: 2px solid #9cce9c; 
+    font-size: 15px;
+    font-weight: 700; 
+    color: #333;
+    text-align: center; 
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.pagenation {
+    width: 200px;
+    margin: 30px auto;
+}
+
+.pagenation:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.pagenation li {
+    width: 20px;
+    height: 20px;
+    float: left; 
+    
+}
+
+.pagenation li a {
+    display: block;
+}
+
+
+.pagenation li a.on {
+    font-weight: 800;
+}
+
+.fieldsetb {
+    border: 0;    
+}
+
+.legendf {
+    font-size: 0;
+}
+
+
+.searchForm {
+    width: 680px;
+    margin-bottom: 25px;
+    
+}
+
+.searchForm #sel{
+    width: 120px;
+    height: 30px;
+    vertical-align: middle;
+    border: none;
+    background-color: #e9e9e9;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 2px;
+    padding: 5px;
+    
+}
+
+.searchForm #sel option,
+.searchForm #sel2 option,
+.searchForm #sel3 option {
+    background-color: #fff;
+    
+    
+}
+
+.searchForm #sel2 {
+    width: 90px;
+    height: 30px;
+    vertical-align: middle;
+    border: none;
+    background-color: #eeeeee;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 2px;
+    padding: 5px;
+}
+
+.searchForm #sel3 {
+    width: 63px;
+    height: 30px;
+    vertical-align: middle;
+    border: none;
+    background-color: #eeeeee;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 2px;
+    padding: 5px;
+    
+}
+
+.searchForm .search{
+    display: inline-block;
+    width: 200px;
+    height: 30px; 
+    margin-top: 0;
+    background-color: #eeeeee;
+    border: none;
+
+}
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    
+}
+
+.searchForm .btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: relative;
+    right: 35px;
+    top: 4px;
+    background: none;
+    cursor: pointer;   
+}
+
+.searchForm .btn img {
+    width: 20px;
+    background: none;  
+    
+}
+
+select {
+    appearance: none;
+    background: url(../img/new/icon/downiconb.png) no-repeat right 5px center ;
+    background-size: 15px;
+}
+

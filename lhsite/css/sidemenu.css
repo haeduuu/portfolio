@@ -1,0 +1,73 @@
+/* side navbar */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ecececdc; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  .sidenav li {width: 300px; margin: 0 auto; }
+  .sidenav a {
+    padding: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1; font-weight: 500; font-size: 30px;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  
+  }
+  
+  .sidenav > h1 {
+    width: 500px; 
+    height: 100px; 
+    font-size: 40px; 
+    font-weight: 600; 
+    color: #31852f;
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  
+  .sidenav .fullbox {width: 1500px; height: 1100px; margin: 0 auto;}
+  .sidenav .fullbox .fulllist {float: left; width: 190px; height: 900px; margin: 10px;}
+  .sidenav .fullbox .fulllist > a {color: #447e43; font-size: 20px; font-weight: 700;
+                                    margin-bottom: 25px; position: relative; border-radius: 20px;}
+  .sidenav .fullbox .fulllist > a:hover {background-color: #ffffff8c; 
+                                        transition: 0.5s; font-size: 21px;}
+     
+  
+  .sidenav .subbox > li { width: 190px; margin-bottom: 25px; 
+                          background-color: #ffffff9a;
+                          border-radius: 10px;
+                          }
+  .sidenav .subbox > li > a {color: #333; font-size: 18px; font-weight: 600; 
+                              text-align: left; margin-bottom: 5px;}
+  .sidenav .subbox > li > a:hover {color: #31852f;}
+  .sidenav .lastul > li {text-align: left; width: 190px;}
+  .sidenav .lastul > li > a {color: #333; text-align: left; font-size: 14px; padding: 10px;}
+  .sidenav .lastul > li > a:hover {font-size: 15px; font-weight: 600;}
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

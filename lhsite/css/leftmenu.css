@@ -1,0 +1,66 @@
+.leftmenu {
+    width: 200px; 
+    height: 800px; 
+    position: absolute;
+    left: 0;
+
+}
+    
+.leftmenu .nav {
+    width: 200px; 
+    text-indent: 10px;
+    position: absolute;
+    
+    top: 50px;
+    
+}
+
+
+
+.leftmenu .nav .lefttit .msub {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #dddddd;
+    
+}
+
+.leftmenu .nav .mtit{
+    height: 50px;    
+    line-height: 50px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 15px;   
+    cursor: pointer; 
+    border-bottom: 2px solid #6caa6c;
+}
+
+
+
+.leftmenu .nav .mtit img {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    margin: 11px;
+}
+
+.leftmenu .nav .mtit:hover {
+    color: #ffffff;
+    background-color: #6caa6c;
+}
+
+.leftmenu .nav .lefttit .msub > li {
+    width: 200px; 
+    display: block; 
+    height: 40px;     
+    line-height: 40px;
+    font-size: 13px;
+    
+}
+
+
+.leftmenu .nav .lefttit .msub > li:hover {
+    color: #fff;
+    background-color: #6caa6c;
+    font-weight: 600;
+    
+}

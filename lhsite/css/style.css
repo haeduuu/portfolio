@@ -1,0 +1,224 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sidemenu.css);
+
+
+html, body {font-family: "Noto Sans KR", sans-serif;}
+ *{margin: 0; padding: 0;}
+ul, li, ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+
+
+#wrap {position: relative;}
+
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+
+
+
+/* heaner gnb backgroud */
+
+
+#visual {width: 100%; height: 100%; z-index: -9999; margin-top: -100px; }
+
+#container {width: 1200px;height: auto; margin: 0 auto;}
+
+#container #cont1 > h1 {width: 1000px; height: 30px; margin: 30px auto; text-align: center;
+                        font-size: 30px; font-weight: 600;}
+#container #cont1 {width: 1000px; height: 320px;  margin: 0 auto; position: relative; padding-top: 50px;}
+#container #cont1 .cont1-box {display: flex; justify-content: space-around; padding-top: 30px;
+                              }
+#container #cont1 .cont1-box li {width: 220px; height: 140px; text-align: center; background-color: #f7f7f7;
+									border-radius: 30px; box-shadow: 0px 0px 20px #d6d6d6;}
+#container #cont1 .cont1-box li:hover {background-color: #60c45d; color: #fff; transition: 0.4s;}
+
+
+
+/* 공지사항 탭 */
+.cont3 {width: 700px; height: 300px; position: relative; margin: 10px 10px 10px 0;  margin-top: 50px;
+           border-radius: 10px; background-color: #f8f8f8;
+           box-shadow: 0px 0px 30px #dbdbdb; float: left;}
+
+.cont3 h2  {position: absolute; left: 45px; top: 25px; color: #333; font-size: 20px;
+            font-weight: 500;}
+
+.cont3 > .tabs {position: absolute; left: 30px; top: 70px;}
+
+ul.tabs {width: 130px;height: 180px; 
+          position: absolute; }
+ul.tabs li {color:#3b3b3b; width: 100px; height: 20px; display:inline-block;
+            padding: 10px;margin: 5px; cursor:pointer;font-size:16px; 
+            text-align: center;  border-radius: 10px; font-weight: 800;}
+ul.tabs li:hover {box-shadow: 0px 0px 10px #c9c9c9;}
+    
+ul.tabs li.current {background:#fff;color:#222; text-align: center; 
+                    width: 100px; height: 20px; font-weight: 800; 
+                    background-color: #577a57; 
+                    color: #fff;}
+  
+.tab-content {display:none;width:100%;padding:10px 0; width: 300px; position: absolute;
+              top: 55px; left: 230px;}
+.tab-content:after {content:'';display:block;clear:both}
+.tab-content ul {width: 450px;}
+.tab-content ul li {width: 330px; display:inline-block;float:none;width:100%;padding:8px 0px; 
+                    height: 18px; font-size: 15px;} 
+.tab-content ul li > a:hover{font-weight: 600;}
+.tab-content ul li > span{float:right;}
+.tab-content.current {display:block}
+
+
+  /* 주요사업 안내 */
+.group {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+.item {
+    width: 1190px;
+    height: 200px;
+    background-position: center;
+    background-size: 1350px;
+    background-color: #333;
+    margin: 4px;
+    margin-bottom: 8px;
+    border-radius: 20px;    
+    cursor: pointer;
+  }
+
+.item:hover {
+  background-size: 1380px; 
+
+}
+
+
+.group .item {
+  position: relative;
+}
+
+.group .item > .tit {
+  position: absolute; 
+  width: 250px; 
+  height: 60px;                   
+  border-bottom-left-radius: 10px; 
+  right: 0; 
+  top: 0;
+}
+
+.group .item .tit > h1 {
+  font-size: 40px; 
+  color: #ffffff; 
+  margin-top: 80px; 
+  font-weight: 600;                      
+  margin-right: 50px;
+}
+
+.group .item .hometit {position: absolute; width: 600px; height: 200px;  
+                       top: 240px; background-color: #ffffffe0; border-radius: 10px;}
+.group .item .hometit > h1 {position: absolute; font-weight: 800; margin: 30px; 
+                            font-size: 25px; color: #464646;}
+.group .item .hometit > h1 > span {color: #87af87;}
+.group .item .hometit ul {width: 420px; margin-top: 20px; position: absolute; left: 190px; top: 12px;}
+.group .item .hometit li {height: 35px; width: 210px; float: left; }
+.group .item .hometit li > a {font-size: 15px; float: left;}
+.group .item .hometit li > a:hover {font-weight: 800;}
+
+.group > h1 {font-size: 50px; font-weight: 600; margin: 50px 20px 30px 20px; 
+             width: 700px; position: relative; left: 0;}
+
+
+
+
+
+/* 알림 슬라이드 배너 */
+.banner { width: 480px;height: 300px; 
+          float: right; position: relative; border-radius: 10px; 
+          background-color: #f8f8f8;
+          box-shadow: 0px 0px 30px #dbdbdb; margin-top: 50px;}
+.banner .bannerbox {width: 450px; height: 300px; margin: 0 auto;}
+.banner .bannerbox li {width: 450px; height: 300px; }
+.banner .bannerbox li img { width: 100%; margin-top: 30px;  margin-top: 60px; border-radius: 5px;}
+.banner > h1 {font-size: 20px; font-weight: 600; position: absolute; top: 20px; left: 25px;}
+
+/* 슬라이드 아이콘 */
+.slick-prev, .slick-next {border: none; background-color: transparent;}
+.slick-prev {margin: 20px; position: absolute; bottom: 0; right: 40px; z-index: 9;}
+.slick-next {margin: 20px; position: absolute; bottom: 0; right: 0;}
+
+
+/* Quick Menu */
+.quickmenu {width: 100%; height: 450px;  float: left;
+            margin: 0 auto; position: relative;  margin-top: 50px; background-color: #f0f0f0;}
+.quickmenu .quicktit {margin: 0 auto; width: 180px; height: 40px; margin-top: 50px;}
+.quickmenu .quicktit p {text-align: center; font-size: 14px; font-weight: 600;
+                          border: 2px solid #5f5f5f;  width: 160px; height: 20px; 
+                          padding-top: 5px; border-radius: 50px; color: #696969;}
+
+.quickmenu .quicksub {width: 550px; height: 70px; margin: 0 auto; margin-top: 20px;}
+.quickmenu .quicksub h1 {font-size: 30px; font-weight: 700; padding-top: 14px;}
+
+
+
+.quickmenu .quicklist { margin-top: 50px; 
+                      width: 970px; height: 170px; margin: 0 auto; background-color: #fff;
+                      position: relative; top: 20px; border-radius: 30px;}
+.quickmenu .quicklist li {width: 120px; height: 120px; text-align: center; color: #333; 
+									border-radius: 30px;  float: left; margin: 20px; justify-content: space-between;}
+.quickmenu .quicklist li:hover {background-color: #bce6b0; color: #279611; transition: 0.4s;
+                                 font-weight: 800;}
+                    
+
+.quickmenu .quicklist li .icon img {position: relative; top: 15px; 
+                                    border-radius: 50%; background-color: #eeeeee;
+                                    width: 70px;}
+.quickmenu .quicklist li:hover .icon  img {background-color: #ffffff; transition: 0.4s;}
+.quickmenu .quicklist li .maintxt {position: relative; top: 30px; left: 2px;}    
+.quickmenu .quicklist li .maintxt p {font-size: 12px; font-weight: 600; }        
+
+
+
+/* flow banner */
+.contfb {clear: both;width: 1200px;height: 65x;
+  margin: 20px auto;}
+.contfb ul li{float: left;width: 170px;height: 60px;
+  border: 1px solid #eee;box-sizing: border-box;}
+
+
+.fbanner {overflow: hidden;display: flex;
+  max-width: 1180px;margin: auto;background-color: #fff;}
+.fbanner .fblist {display: flex; height: 60px;}
+.fbanner .fblist > li {margin: 5px 10px 0 10px; border: 0;}
+.fbanner .fblist > li img {width: 150px; height: 50px;  }
+
+@keyframes flowRolling{
+  0% {transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+
+
+
+/* 나타나기 */
+
+
+.scroll_on {opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.scroll_on.type_left {transform: translate(-50px, 0);}
+.scroll_on.type_right {transform: translate(50px, 0);}
+
+

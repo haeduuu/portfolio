@@ -1,0 +1,727 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sidemenu.css);
+@import url(../css/leftmenu.css);
+
+html, body {font-family: "Noto Sans KR", sans-serif;}
+ *{margin: 0; padding: 0;}
+ul, li, ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+#wrap {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+
+}
+
+#visual {
+    position: relative;
+    width: 100%;
+    top: -100px;
+    
+}
+
+#visual img {
+    width: 100%;
+}
+
+#container {
+    width: 1200px; 
+    height: 3000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#container .subtit {
+    position: relative;
+    width: 1200px; 
+    padding-top: 70px;
+    border-bottom: 2px solid #348b34;}
+
+#container .subtit h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom:60px;
+    padding-left: 30px;
+}
+
+#container .subtit > ul {
+    position: absolute;
+    color: #333;
+    bottom: 30px;
+    left: 30px;
+    font-size: 13px;
+    display: flex;}
+
+#container .subtit > ul > li {
+    margin-right: 5px;
+}
+
+#container .subtit > ul > li:hover {
+    font-weight: 600;
+}
+
+#container .subtit > ul > li:first-child::after,
+#container .subtit > ul > li:nth-child(2)::after,
+#container .subtit > ul > li:nth-child(3)::after {
+    content: ' >';
+    color: #8a8a8a;
+    margin: 5px;
+}
+
+#container .contents {
+    width: 1200px; 
+    float: left; 
+    position: relative;
+}
+
+
+
+
+
+
+.rightmenu {
+    width: 950px; 
+    height: auto;     
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    
+}
+
+/* 탭 메뉴 */
+
+
+.tabbtn {
+    
+    width: 615px;
+    height: 70px;
+    margin: 20px auto;
+    
+}
+
+.tab {    
+    float: left;
+    
+    
+    margin-left: 5px;
+    
+
+    
+    
+    
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    width: 250px;
+    height: 60px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;    
+    transition: 0.3s;
+    margin: 0 25px 0 25px;
+    box-shadow: 0px 0px 30px #dbdbdb;
+    border: 3px solid #64a164;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    font-size: 18px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #64a164;
+    
+    color: #fff;
+    font-size: 17px;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    width: 950px;
+    
+    float: left;
+    display: none;   
+    border-top: none;
+    margin-top: 20px;
+  }
+
+
+
+.tabcontent .cont1_head {
+    width: 100%;
+    height: 100px;
+    margin: 100px 0 50px 0;
+    
+    
+}
+
+.tabcontent .cont1_head > p {
+    width: 600px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 50px;
+    
+}
+
+.tabcontent .cont1_head > p::before {    
+    background-image: url(../img/ceo/before.png) no-repeat;
+    background-size: cover;
+}
+
+
+.tabcontent .cont1_bottom {
+    width: 100%;
+    height: 400px;    
+    position: relative;
+    
+}
+
+.tabcontent .cont1_bottom .background {
+    width: 100%; 
+    height: 300px;
+    background : url(../img/ceo/bacimg2.png) no-repeat  0 ;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;   
+    border-radius: 10px;
+}
+
+.tabcontent .cont1_bottom .profilepic {
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    right: -10px;
+    z-index: 1;
+
+    
+}
+
+.tabcontent .cont1_bottom > p {
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
+    left: 60px;    
+
+}
+
+.tabcontent .cont1_content{ 
+    width: 940px;
+    height: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+.tabcontent .cont1_content > p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #999999;
+    line-height: 25px;
+    
+
+}
+
+.tabcontent .cont1_content .sign {
+    font-weight: 800;
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+}
+
+.tabcontent .cont1_content .sign > img {
+    margin-left: 20px;
+
+}
+
+
+.active {
+    display: block;
+}
+
+.cont1.active {
+    background-color: #64a164;
+    
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.years {
+    width: 100%;
+    height: 912px;    
+    
+    position: relative;
+    margin-top: 120px;
+    
+}
+
+.years .yearsheaed {
+    position: absolute;
+    right: 290px;
+    top: 100px;
+    width: 200px;
+    height: 60px;
+    border-left: 7px solid #474747;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4b4b4b;
+
+}
+
+.years .yearsheaed > h1 {
+    margin: 10px 10px 10px 25px;
+}
+
+
+
+.years .port {
+    position: absolute;    
+    right: 0;
+    top: 228px;
+    z-index: 1;
+}
+
+.years .port .timeline {
+    margin-bottom: 60px;
+    
+}
+
+.years .port .timelineh1 {
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.years .portpic {
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    bottom: -21px;
+    
+}
+
+.years .portpic img {
+    
+    width: 100%;
+    margin: 20px;
+    z-index: 1;
+    
+}
+
+.years .yearsbc {
+    width: 100%; 
+    height: 300px;
+    background: url(../img/ceo/bacimg2.png) 0 0 no-repeat ;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+ /*==================================
+      TIMELINE
+  ==================================*/
+
+  .timeline {
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 35px 10px 15px 35px;
+    width: 450px;
+    border: 1px solid #d4e4d4;
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+    line-height: inherit;
+    color: #3D4351;
+    margin-top: 0
+  }
+
+.timeline-title {
+    font-size: 12px;
+    font-weight: 500;
+
+}
+  
+  /*----- TIMELINE ITEM -----*/
+  .timeline-item {
+    padding-left: 40px;
+    position: relative;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  /*----- TIMELINE INFO -----*/
+  .timeline-info {
+    width: 132px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 0.5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  /*----- TIMELINE MARKER -----*/
+  .timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+  }
+  .timeline-marker:before {
+    background: #64a164;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 8px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  .timeline-marker:after {
+    content: "";
+    width: 2px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  .timeline-item:last-child .timeline-marker:after {
+    content: none;
+  }
+  
+  .timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #64a164;
+  }
+  
+  /*----- TIMELINE CONTENT -----*/
+  .timeline-content {
+    padding-bottom: 20px;
+  }
+  .timeline-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /*----- TIMELINE PERIOD -----*/
+  .period {
+    padding: 0;
+  }
+  .period .timeline-info {
+    display: none;
+  }
+
+
+  .period .timeline-marker:before {
+    background: transparent;
+    content: "";
+    width: 15px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute;
+    border-top: 3px solid #CCD5DB;
+    border-bottom: 3px solid #CCD5DB;
+  }
+  .period .timeline-marker:after {
+    content: "";
+    height: 32px;
+    top: auto;
+  }
+  .period .timeline-content {
+    padding: 40px 0 70px;
+  }
+  .period .timeline-title {
+    margin: 0;    
+  }
+  
+  /*----------------------------------------------
+      MOD: TIMELINE SPLIT
+  ----------------------------------------------*/
+
+.timeline-split .timeline, .timeline-centered .timeline {
+    display: table;
+}
+.timeline-split .timeline-item, .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+}
+.timeline-split .timeline-info, .timeline-centered .timeline-info,
+.timeline-split .timeline-marker,
+.timeline-centered .timeline-marker,
+.timeline-split .timeline-content,
+.timeline-centered .timeline-content,
+.timeline-split .period .timeline-info {
+    display: table-cell;
+    vertical-align: top;
+}
+.timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+    position: relative;
+}
+.timeline-split .timeline-content, .timeline-centered .timeline-content {
+    padding-left: 15px;
+}
+.timeline-split .timeline-info, .timeline-centered .timeline-info {
+    padding-right: 10px;
+}
+.timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+    position: relative;
+    left: -45px;
+}
+
+  
+
+  
+  /*----------------------------------------------
+      MOD: MARKER OUTLINE
+  ----------------------------------------------*/
+  .marker-outline .timeline-marker:before {
+    background: transparent;
+    border-color: #64a164;
+  }
+  .marker-outline .timeline-item:hover .timeline-marker:before {
+    background: #64a164;
+  }
+
+
+
+  /* 나타나기 */
+
+.scroll_on {opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.scroll_on.type_left {transform: translate(-50px, 0);}
+.scroll_on.type_right {transform: translate(50px, 0);}
+
+#cont3 {
+  height: auto;
+}
+
+.cont3_tit {
+  width: 550px;
+  height: 60px;
+  margin: 0 auto;
+  background: url(../img/ceo/bacimg2.png) 0 0 no-repeat;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 80px;
+}
+
+.cont3_tit > p {
+  width: 500px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.cont3_tit .size1 {
+  font-size: 23px;
+}
+
+.cont3_cont1 {
+  width: 950px;
+  height: 200px;
+}
+
+.cont3_cont1 > ul {
+  margin-top: 40px;
+  width: 950px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.cont3_cont1 > ul > li { 
+  float: left;
+  width: 200px;
+  height: 150px;  
+  border: 3px solid #dddddd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  font-weight: 800;
+  color: #333;
+}
+
+.cont3_cont1 > ul > li::before {
+  content: '+';
+  width: 50px;
+  height: 50px;
+  background-color: #67b867;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 49px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  top: 50px;
+  display: inline-block;  
+}
+
+.cont3_cont1 > ul > li:first-child:before {  
+display: none;
+}
+
+.cont3_cont1 > ul > li:nth-child(2)::before {   
+  left: 22.5%;
+}
+
+.cont3_cont1 > ul > li:nth-child(3)::before {     
+  left: 47.4%;
+}
+
+.cont3_cont1 > ul > li:last-child::before {    
+  left: 72.6%;
+}
+
+
+
+.cont3_cont1 > ul > li .iicon { 
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.cont3_cont1 > ul > li .iicon > img {
+  width: 40px;
+}
+
+.cont3_img {
+  width: 950px;
+  height: 80.5px;
+  margin-bottom: 30px;
+}
+
+.cont3_img img {
+  width: 100%;
+}
+
+.cont3_cont2 {
+  width: 950px;
+  height: 500px;
+}
+
+.cont3_cont2 h1 {
+  font-size: 27px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cont3_cont2 .minilist {
+  width: 860px;
+  height: 500px;
+  background-color: #ebf2fc;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding-top: 40px;
+  
+}
+
+.cont3_cont2 .minilist > ul {
+  width: 700px;
+  margin: 0 auto; 
+  
+}
+
+.cont3_cont2 .minilist > ul > li {
+  position: relative;
+  width: 700;
+  height: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  display: flex;
+  font-weight: 500;
+  padding: 20px 20px 20px 100px; 
+  
+}
+
+.cont3_cont2 .minilist > ul > li > span {
+  background-color: #67b867;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.cont3_cont2 .minilist > ul > li:nth-child(2) span {
+  background-color: #5b9b5b;
+}
+
+.cont3_cont2 .minilist > ul > li:nth-child(3) span {
+  background-color: #538b53;
+}
+
+.cont3_cont2 .minilist > ul > li:nth-child(4) span {
+  background-color: #4a7c4a;
+}
+
+.cont3_cont2 .minilist > ul > li:nth-child(5) span {
+  background-color: #315031;
+}
+
+.cont3_cont2 .minilist > ul > li:last-child span {
+  background-color: #243b24;
+}

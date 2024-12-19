@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon1.png">
+    <title>공사소개 페이지</title>
+    <link rel="stylesheet" href="css/ceo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
+    <!-- 헤더메뉴 슬라이드 -->
+    <script src="script/jquery-1.11.2.min.js"></script>
+    <script src="script/menu.js"> </script> 
+
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/nav.js"></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src="script/script.js"></script>
+
+    <!-- nav bar -->
+    <script src="script/navi2.js"></script>
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <h1>전체메뉴</h1>
+        <ul class="fullbox">            
+            <li class="fulllist"><a href="#">새소식</a>
+                <ul class="subbox">
+                    <li><a href="#">공지·공모</a>
+                        <ul class="lastul">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">공모안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">채용정보</a>
+                        <ul class="lastul">
+                            <li><a href="#">LH인재상</a></li>
+                            <li><a href="#">NCS 기반 채용</a></li>
+                            <li><a href="#">직무설명서</a></li>
+                            <li><a href="#">정규직 채용공고</a></li>
+                            <li><a href="#">비정규직 채용공고</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="fulllist"><a href="#">소통·신고</a>
+                <ul class="subbox">
+                    <li><a href="#">소통과 신고안내</a></li>
+                    <li><a href="#">고객의소리(민원신청)</a>
+                        <ul class="lastul">
+                            <li><a href="#">민원신청</a></li>
+                            <li><a href="#">증명원신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">국민참여 혁신방</a>
+                        <ul class="lastul">
+                            <li><a href="#">국민참여 혁신제도 안내</a></li>
+                            <li><a href="#">국민참여 혁인안 제출</a></li>
+                            <li><a href="#">제안심사목록</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">직원칭찬</a></li>
+                    <li><a href="#">주택기술 플랫폼</a>
+                        <ul class="lastul">
+                            <li><a href="#">고객제안 주택기술 플랫폼</a></li>
+                            <li><a href="#">층간소음 기술마켓</a></li>
+                            <li><a href="#">주택분야 공사용</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">부패·부조리신고</a>
+                        <ul class="lastul">
+                            <li><a href="#">부동산 투기행위 신고</a></li>
+                            <li><a href="#">사업예정지 투기행위 신고</a></li>
+                            <li><a href="#">부조리·갑질·전관유착 신고</a></li>
+                            <li><a href="#">청탁금지법 위반 신고</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>   
+            <li class="fulllist"><a href="#">정보공개</a>
+                <ul class="subbox">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">정보공개제도안내</a>
+                        <ul class="lastul">
+                            <li><a href="#">정보공개제도 개요</a></li>
+                            <li><a href="#">정보공개 처리절차</a></li>
+                            <li><a href="#">불복 절차 안내</a></li>
+                            <li><a href="#">비공개 대상정보</a></li>
+                            <li><a href="#">서식 등 기타사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사전공표</a>
+                        <ul class="lastul">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">경영일반</a></li>
+                            <li><a href="#">공사 및 용역현황</a></li>
+                            <li><a href="#">부동산 정보</a></li>
+                            <li><a href="#">예산, 회계, 감사</a></li>
+                            <li><a href="#">주요 사업현황</a></li>
+                            <li><a href="#">홍보, 보안, 정보처리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">정보공개 목록</a></li>
+                    <li><a href="#">이의신청 청구</a></li>
+                    <li><a href="#">사업실명제</a>
+                        <ul class="lastul">
+                            <li><a href="#">개요 및 선정기준</a></li>
+                            <li><a href="#">사업리스트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="fulllist"><a href="#">사업소개</a>
+                <ul class="subbox">
+                    <li><a href="#">주거복지사업</a>
+                        <ul class="lastul">
+                            <li><a href="#">임대주택 유형 안내</a></li>
+                            <li><a href="#">청년·신혼부부계층</a></li>
+                            <li><a href="#">주거취약계층</a></li>
+                            <li><a href="#">주거급여</a></li>
+                            <li><a href="#">LH희망상가</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">주택사업</a>
+                        <ul class="lastul">
+                            <li><a href="#">공공분양주택 공급</a></li>
+                            <li><a href="#">오픈마켓</a></li>
+                            <li><a href="#">주택기술품질자료</a></li>
+                            <li><a href="#">외부 품질점검단</a></li>
+                            <li><a href="#">부동산금융</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">토지사업</a>
+                        <ul class="lastul">
+                            <li><a href="#">신도시조성</a></li>
+                            <li><a href="#">스마트시티 조성</a></li>
+                            <li><a href="#">도시재생</a></li>
+                            <li><a href="#">도시정비</a></li>
+                            <li><a href="#">국유지개발사업</a></li>
+                            <li><a href="#">노후건축물 정비</a></li>
+                            <li><a href="#">행정중심복합도시</a></li>
+                            <li><a href="#">토지은행</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">납북사업</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="fulllist"><a href="#">뉴스룸</a>
+                <ul class="subbox">
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">LH 매거진</a></li>
+                    <li><a href="#">LH TV</a></li>
+                    <li><a href="#">소셜미디어</a></li>
+                </ul>
+            </li>
+            <li class="fulllist"><a href="#">ESG경영</a>
+                <ul class="subbox">
+                    <li><a href="#">LH의  ESG경영</a>
+                        <ul class="lastul">
+                            <li><a href="#">ESG경영 추진체계</a></li>
+                            <li><a href="#">ESG경영 핵심성과</a></li>
+                            <li><a href="#">ESG경영 지속가능보고서</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">E환경 (ECO LH)</a>
+                        <ul class="lastul">
+                            <li><a href="#">환경경영 체계</a></li>
+                            <li><a href="#">ESG 채권</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">S사회 (HOPE LH)</a>
+                        <ul class="lastul">
+                            <li><a href="#">고객현장</a></li>
+                            <li><a href="#">안전/재난</a></li>
+                            <li><a href="#">인권경영</a></li>
+                            <li><a href="#">LH의 동반성장</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">&nbsp; G거버넌스 <br>(CLEAN LH)</a>
+                        <ul class="lastul">
+                            <li><a href="#">경영공시</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="fulllist"><a href="#">공사소개</a>
+                <ul class="subbox">
+                    <li><a href="#">LH개요</a>
+                        <ul class="lastul">
+                            <li><a href="#">경영체계</a></li>
+                            <li><a href="#">경영목표</a></li>
+                            <li><a href="#">주요연혁</a></li>
+                            <li><a href="#">CI/브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CEO</a>
+                        <ul class="lastul">
+                            <li><a href="#">CEO 소개</a></li>
+                            <li><a href="#">주요동정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">조직도 및 연락처</a>
+                        <ul class="lastul">
+                            <li><a href="#">조직도 및 연락처</a></li>
+                            <li><a href="#">임원소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">직원광장</a></li>                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="wrap">
+        <div id="header">            
+            <div class="inner">
+ 
+
+                <h1><a href="index.html"><img src="img/logo.PNG" alt="LH 헤더 로고"></a></h1>
+                <nav id="gnb"> 
+                    <div class="topslide" >
+                        <h1><a href="index.html"><img src="img/logog.PNG" alt="LH 헤더 로고"></a></h1>
+                    </div>       
+                    <ul>
+                        <li class="main"><a href="new.html" class="act">새소식</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">공모안내</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">LH인재상</a></li>
+                                <li><a href="#">직무설명서</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="ceo.html" class="act">공사소개</a>
+                            <ul class="sub">
+                                <li><a href="#">LH개요</a></li>
+                                <li><a href="#">CEO</a></li>
+                                <li><a href="#">직원광장</a></li>
+                                <li><a href="#">지역본부 안내</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="complaint.html" class="act">소통·신고</a>
+                            <ul class="sub">
+                                <li><a href="#">고객의소리</a></li>
+                                <li><a href="#">국민참여 혁신방</a></li>
+                                <li><a href="#">직원칭찬</a></li>
+                                <li><a href="#">사업관련신고</a></li>
+                                <li><a href="#">부패·부조리신고</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="information.html" class="act">정보공개</a>
+                            <ul class="sub">
+                                <li><a href="#">정보공개제도안내</a></li>
+                                <li><a href="#">사전정보공표</a></li>
+                                <li><a href="#">정보공개목록</a></li>
+                                <li><a href="#">이의신청청구</a></li>
+                                <li><a href="#">사업실명제</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="notice.html" class="act">사업소개</a>
+                            <ul class="sub">
+                                <li><a href="#">주거복지사업</a></li>
+                                <li><a href="#">주택사업</a></li>
+                                <li><a href="#">토지사업</a></li>
+                                <li><a href="#">연구개발</a></li>
+                                <li><a href="#">기타사업</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    
+                </nav>
+                <div class="btn">
+                    <a href="#"><img src="img/menu.png" alt="헤더 메뉴 버튼" onclick="openNav()"></a>
+                </div>
+            </div>
+            
+        </div>      
+
+        <div id="visual">
+            <img src="img/ceo/ceo_visual.jpg" alt="ceopage_visual image">
+        </div>
+
+        <div id="container">
+            <div class="subtit">
+                <h1>인사말</h1>
+                <ul>
+                    <li><a href="#">공사소개</a></li>
+                    <li><a href="#">CEO</a></li>
+                    <li><a href="#">CEO소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                </ul>                 
+            </div>   
+
+            <div class="contents">
+
+            
+                <div class="leftmenu">
+                    <ul class="nav">
+                        <li class="lefttit">
+                            <div class="mtit">CEO
+                                <img src="img/new/icon/downiconb.png" alt="left acc icon">
+                            </div>
+                            <ul class="msub">
+                                <li><a href="#">CEO소개</a></li>
+                                <li><a href="#">주요동정</a></li>
+                            </ul>
+                        </li>
+                        <li class="lefttit">
+                            <div class="mtit">조직도 및 연락처
+                                <img src="img/new/icon/downiconb.png" alt="left acc icon">
+                            </div>
+                            <ul class="msub">
+                                <li><a href="#">조직도 및 연락처</a></li>
+                                <li><a href="#">임원소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="lefttit">
+                            <div class="mtit">지역본부 안내
+                                <img src="img/new/icon/downiconb.png" alt="left acc icon">
+                            </div>
+                            <ul class="msub">
+                                <li><a href="#">서울지역본부</a></li>
+                                <li><a href="#">인천지역본부</a></li>
+                                <li><a href="#">경남지역본부</a></li>
+                                <li><a href="#">세종특별본부</a></li>
+                                <li><a href="#">강원지역본부</a></li>
+                                <li><a href="#">충북지역본부</a></li>
+                                <li><a href="#">전북지역본부</a></li>
+                            </ul>
+                        </li>
+                        <li class="lefttit">
+                            <div class="mtit">직원광장</div>
+                        </li>
+                        <li class="lefttit">
+                            <div class="mtit">오시는길
+                                <img src="img/new/icon/downiconb.png" alt="left acc icon">
+                            </div>
+                            <ul class="msub">
+                                <li><a href="#">본사</a></li>
+                                <li><a href="#">지역본부</a></li>
+                                <li><a href="#">마이홈센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rightmenu">
+
+                    <div class="tabbtn">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'cont1')">인사말</button>
+                        </div>
+
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'cont3')">경영방침</button>
+                        </div>
+                    </div>
+
+                    
+                        <div id="cont1" class="tabcontent active">
+                            <div class="cont1_head scroll_on type_bottom">
+                                <p>
+                                    <span style="color: green">주거안정 실현</span>과 <span style="color: green">LH혁신</span>으로 <br>
+                                    국민의 신뢰를 회복하겠습니다.
+                                </p>
+                            </div>
+
+                            <div class="cont1_bottom scroll_on type_bottom">
+                                <img class="profilepic" src="img/ceo/ceo01.png" alt="ceo profile pic">
+                                <p>안녕하십니까? <span style="color: rgb(255, 251, 0);"> 한국토지주택공사 사장 이한준</span>입니다. <br>
+                                    LH 홈페이지를 찾아주신 여러분을 진심으로 환영합니다.</p>
+                                <div class="background">                                    
+                                </div>
+                            </div>
+
+                            <div class="cont1_content scroll_on type_bottom">
+                                <p>LH는 지난 반세기 넘는 세월 동안 국민의 든든한 동반자로서 약 300만호의 공공주택 공급과 141만호에 달하는 임대주택 운영을 통해 국민 주거생활 향상을 뒷받침하며, 국민경제의 기반인 도시와 산업단지 조성으로 국토의 효율적 이용을 선도해왔습니다. <br><br>
+
+                                    LH 모든 임직원은 지금 이 순간에도 국민 삶의 질 향상과 국가 경제발전에 이바지하기 위해 최선을 다하고 있습니다. <br><br>
+                                    
+                                    우선, 정부의 270만호 주택공급 정책을 성공적으로 수행하여 청년과 서민층의 내 집 마련 등 국민 주거안정을 이루겠습니다. <br><br>
+                                    
+                                    취약계층의 주거복지 사각지대 해소와 주거 · 사회서비스 결합으로 질 높은 주거복지를 실현하면서, 지역균형발전 사업추진을 통해 지방소멸을 막고 지역경제에 활력을 더해 ‘살기 좋은 지방시대’를 열어 가겠습니다. <br><br>
+                                    
+                                    또한, 국민의 눈높이에 부응해 층간소음 해소, 마감재 상향 등 고품질의 공공주택을 공급하고, 임대주택의 주거서비스와 소셜믹스 강화에 더 노력하여 입주민의 주거생활을 향상시키겠습니다. <br><br>
+                                    
+                                    아울러, 1기 신도시의 체계적인 재정비를 비롯하여 선교통·후입주로 3기 신도시를 차질 없이 조성하고, 향후 도시에 대한 철저한 사후 관리운영은 물론, 디지털 · 디자인 혁신 등을 통해 도시, 교통, 주택의 백년지계(百年之計)를 다져 가겠습니다. <br><br>
+                                    
+                                    미래 주거환경변화에 대응하여 4차 산업혁명과 자율주행 · UAM 등 모빌리티 혁명의 기반을 확립하면서, 탄소중립 시대에 걸맞은 제로에너지 주택과 녹색도시 조성에도 심혈을 기울이겠습니다. <br><br>
+                                    
+                                    국민 여러분은 LH의 고객이자 주인입니다. LH가 땀흘려 맺은 결실이 국민의 행복을 더 크게 키울 수 있도록 본연의 역할을 충실히 수행하는 동시에, 국민의 애로사항을 기대 이상으로 해결해 드리는 적극행정을 통해 고객만족도를 높여 나가겠습니다. <br><br>
+                                    
+                                    지난날 LH는 일부 직원의 일탈로 국민의 신뢰를 저버렸고, 이로 인해 대다수 임직원의 사기도 크게 저하되었습니다. <br><br>
+                                    
+                                    이제 새로운 도약을 준비하는 LH가 그간의 과오를 바로 잡고 국민을 위해 힘껏 봉사할 수 있도록 다시 한번 애정과 믿음을 가지고 지켜봐 주시길 부탁드립니다. <br><br>
+                                    
+                                    감사합니다.</p>
+
+                                    <p class="sign">한국토지주택공사 사장
+                                    <img src="img/ceo/sign.png" alt="한국토지주택공사 사장 사인"></p>
+                            </div>
+
+                            <div class="years">
+                                
+                                <div class="yearsheaed scroll_on type_bottom">
+                                    <h1>주요이력</h1>
+                                </div>
+
+                                <div class="port scroll_on type_right">
+                                    
+                                        <ul class="timeline timeline-split">
+                                            <h1 class="timelineh1">학력</h1>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>1979</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">한양대학교 도시공학과 졸업</h3>
+                                                </div>
+                                            </li>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>1985</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">한양대학교 교통공학 석사</h3>
+                                                </div>
+                                            </li>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2000</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">홍익대학교 교통정책학 박사</h3>
+                                                </div>
+                                            </li>                                    
+                                        </ul>
+
+                                        <ul class="timeline timeline-split">
+                                            <h1 class="timelineh1">주요경력</h1>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>1979. 4 ~ 1982. 2</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">국토연구원 연구원</h3>
+                                                </div>
+                                            </li>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>1982. 8 ~ 1986. 2</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">한국전자통신연구원 연구원</h3>
+                                                </div>
+                                            </li>
+                                    
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>1997. 6 ~ 2000. 12</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">한국교통연구원 도로교통실장ㆍ기획조정실장</h3>
+                                                </div>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2002. 2 ~ 2006. 2</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">한국교통연구원 부원장</h3>
+                                                </div>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2006. 7 ~ 2008. 10</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">경기도청 정책특별보좌관</h3>
+                                                </div>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2008. 10 ~ 2011. 7</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">경기주택도시공사 사장</h3>
+                                                </div>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2011. 9 ~ 2014. 8</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">아주대학교 ITS대학원 초빙교수</h3>
+                                                </div>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-info">
+                                                    <span>2022. 11 ~</span>
+                                                </div>
+                                                <div class="timeline-marker"></div>
+                                                <div class="timeline-content">
+                                                    <h3 class="timeline-title">(現) 한국토지주택공사(LH) 사장</h3>
+                                                </div>
+                                            </li>
+                                            
+                                    
+                                        </ul>  
+
+                                </div>
+                                <div class="portpic scroll_on type_right">
+                                    <img src="img/ceo/ceo02.png" alt="ceo 인사말 주요이력 대표 전신">
+                                </div>
+                                <div class="yearsbc scroll_on type_left"></div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div id="cont3" class="tabcontent">
+                            
+                                <div class="cont3_tit scroll_on type_bottom">
+                                    <p>국민 관점에서의 <span style="color: yellow;">변화와 혁신, 본연의 역할 집중</span>
+                                        을 통한 <br> <span class="size1">지속가능한 LH구현</span></p>
+                                </div>
+
+                                <div class="cont3_cont1 scroll_on type_bottom">
+                                    <ul>
+                                        <li>
+                                            <i class="iicon"><img src="img/ceo/link_24.png" alt="국민신뢰제고 아이콘"></i>
+                                            국민신뢰제고
+                                        </li>
+                                        <li>
+                                            <i class="iicon"><img src="img/ceo/link_25.png" alt="조직효율향상 아이콘"></i>
+                                            조직효율향상
+                                        </li>
+                                        <li>
+                                            <i class="iicon"><img src="img/ceo/link_26.png" alt="핵심역량강화 아이콘"></i>
+                                            핵심역량강화
+                                        </li>
+                                        <li>
+                                            <i class="iicon"><img src="img/ceo/link_05.png" alt="미래변화선도 아이콘"></i>
+                                            미래변화선도
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="cont3_img scroll_on type_bottom"  >
+                                    <img src="img/ceo/triangle.png" alt="경영방침 중간 표시선">
+                                </div>
+
+                                <div class="cont3_cont2 scroll_on type_bottom">
+                                    <h1>CEO 중점추진사항</h1>
+                                    <div class="minilist">
+                                        <ul>
+                                            <li>
+                                                <span>01</span>
+                                                청렴 · 공정 · 안정 경영 실천으로 사회적 책임 이행
+                                            </li>
+                                            <li>
+                                                <span>02</span>
+                                                국민 눈높이에 부합하는 조직 · 업무 혁신 완성
+                                            </li>
+                                            <li>
+                                                <span>03</span>
+                                                지속가능성장을 위한 탄탄한 재무구조 확립
+                                            </li>
+                                            <li>
+                                                <span>04</span>
+                                                속도감 있는 저책수행으로 체감도 높은 성과 창출
+                                            </li>
+                                            <li>
+                                                <span>05</span>
+                                                미래변화를 선도하는 선제적 대응기반 구축
+                                            </li>
+                                            <li>
+                                                <span>06</span>
+                                                열린 소통으로 유연하고 역동적인 기업문화 조성
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+                    
+
+                </div>
+            </div>
+
+
+
+        </div>
+    
+        <div id="footer">
+            <div class="finner">
+                <img src="img/logo.PNG" alt="하단 로고">
+
+                <div>
+                    <ul class="f_link">
+                        <li>
+                            <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#" title="영상정보 처리기기 운영방침">영상정보 처리기기 운영방침</a>
+                        </li>
+                        <li>
+                            <a href="#" title="메일문의">이메일무단수집금지</a>
+                        </li>
+                        <li>
+                            <a href="#" title="사이트맵">이용안내</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="addr_txt">
+                    <address>
+                        <p>우) 52852 경상남도 진주시 충의로 19(충무공동)</p>
+                    </address>
+                    <p class="f_txt f_floatl">
+                        대표번호 : 1600-1004 |
+                        FAX : 055-922-5959(문서과)
+                    </p>
+                    <p class="f_txt">COPYRIGHT 2023 BY KOREA LAND & HOUSING CORPORATION. ALL RIGHTS RESERVED</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- 사이드 메뉴바 -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            }
+            
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+    </script>
+
+
+    <!-- 탭메뉴 -->
+    <script>
+        function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+    <!-- 나타나기 스트립트 -->
+     <script>
+            $(document).ready(function() {
+            // 클래스가 "scroll_on"인 모든 요소를 선택합니다.
+            const $counters = $(".scroll_on");
+            
+            // 노출 비율(%)과 애니메이션 반복 여부(true/false)를 설정합니다.
+            const exposurePercentage = 20; // ex) 스크롤 했을 때 $counters 컨텐츠가 화면에 100% 노출되면 숫자가 올라갑니다.
+            const loop = true; // 애니메이션 반복 여부를 설정합니다. (true로 설정할 경우, 요소가 화면에서 사라질 때 다시 숨겨집니다.)
+
+            // 윈도우의 스크롤 이벤트를 모니터링합니다.
+            $(window).on('scroll', function() {
+                // 각 "scroll_on" 클래스를 가진 요소에 대해 반복합니다.
+                $counters.each(function() {
+                    const $el = $(this);
+            
+                    // 요소의 위치 정보를 가져옵니다.
+                    const rect = $el[0].getBoundingClientRect();
+                    const winHeight = window.innerHeight; // 현재 브라우저 창의 높이
+                    const contentHeight = rect.bottom - rect.top; // 요소의 높이
+                    
+                    // 요소가 화면에 특정 비율만큼 노출될 때 처리합니다.
+                    if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100)) {
+                        $el.addClass('active');
+                    }
+                    // 요소가 화면에서 완전히 사라졌을 때 처리합니다.
+                    if (loop && (rect.bottom <= 0 || rect.top >= window.innerHeight)) {
+                        $el.removeClass('active');
+                    }
+                });
+            }).scroll();
+        });
+     </script>
+</body>
+</html>

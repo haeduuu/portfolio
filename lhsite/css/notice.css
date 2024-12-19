@@ -1,0 +1,304 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sidemenu.css);
+@import url(../css/leftmenu.css);
+
+html, body {font-family: "Noto Sans KR", sans-serif;}
+ *{margin: 0; padding: 0;}
+ul, li, ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+#wrap {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    
+}
+
+#visual {
+    position: relative;
+    width: 100%;
+    top: -100px;   
+}
+
+#visual img {
+    width: 100%;
+}
+
+
+#container {
+    width: 1200px; 
+    height: 1300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#container .subtit {
+    position: relative;
+    width: 1200px; 
+    padding-top: 70px;
+    border-bottom: 2px solid #348b34;}
+
+#container .subtit h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom:60px;
+    padding-left: 30px;
+}
+
+#container .subtit > ul {
+    position: absolute;
+    color: #333;
+    bottom: 30px;
+    left: 30px;
+    font-size: 13px;
+    display: flex;}
+
+#container .subtit > ul > li {
+    margin-right: 5px;
+}
+
+#container .subtit > ul > li:hover {
+    font-weight: 600;
+}
+
+#container .subtit > ul > li:first-child::after {
+    content: ' >';
+    color: #8a8a8a;
+    margin: 5px;
+}
+
+#container .contents {
+    width: 1200px; 
+    
+    float: left; 
+    position: relative;
+}
+
+
+
+.rightmenu {
+    width: 950px; 
+    height: auto;     
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    
+}
+
+
+
+.cont_header {
+    width: 900px;
+    height: 100px;
+    background-color: #e5f5e3;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cont_header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+}
+
+.cont1 {
+    width: 950px;
+    height: 280px;
+    margin: 50px auto;
+}
+
+.cont1 > h1 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.cont1 > h1::before {    
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    background: url(/img/infor/img/bul_h3.png) no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.cont1 > ul {
+    width: 950px;    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+.cont1 > ul > li {    
+    width: 270px;
+    height: 200px; 
+}
+
+.cont1_sub1,
+.cont2_sub1,
+.cont3_sub1 {
+    width: 270px;
+    height: 80px;
+    border-radius: 50px;    
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+}
+
+.cont1_sub1 {background-color: #609460;}
+.cont2_sub1 {background-color: #436343;}
+.cont3_sub1 {background-color: #283d28;}
+
+
+.cont1_sub1 > h1,
+.cont2_sub1 > h1,
+.cont3_sub1 > h1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;   
+}
+
+.cont1_sub1 > span,
+.cont2_sub1 > span,
+.cont3_sub1 > span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff91;
+}
+
+.cont1_sub1 > span:hover,
+.cont2_sub1 > span:hover,
+.cont3_sub1 > span:hover {
+    color: #fff;
+}
+
+.cont1_subcont1,
+.cont2_subcont1,
+.cont3_subcont1 {
+    width: 270px;
+    height: 120px;
+    margin-top: 30px;
+    background-color: #fff;    
+    border-radius: 15px;
+    border: 1px solid #cacaca;
+    display: flex;
+    justify-content: center;
+    align-items : center;   
+    position: relative; 
+
+    
+
+    
+}
+
+.cont1_subcont1::after,
+.cont2_subcont1::after,
+.cont3_subcont1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    height: 30px;
+    border-left: 3px dotted #aaa;
+    z-index: 0;
+
+}
+
+.cont1_subcont1 > p,
+.cont2_subcont1 > p,
+.cont3_subcont1 > p {
+    text-align: center;
+    line-height: 18px;    
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cont2 {
+    width: 950px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.cont2 > h1 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.cont2 > h1::before {    
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    background: url(/img/infor/img/bul_h3.png) no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.tbl {
+    width: 900px;    
+    height: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-top: 3px solid #aaa;
+    border-bottom: 3px solid #aaa;
+    color: #555;
+    font-size: 15px;
+    font-weight: 600;    
+
+    
+    
+}
+
+thead th {
+    background-color: #f3f3f3;
+    vertical-align: middle;
+    height: 40px;
+    font-weight: 800;
+    font-size: 15px;  
+}
+
+thead th:first-child {
+    border-right: 1px solid #dddddd;
+}
+
+
+td:first-child {
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: 15px;
+    border-left: none;       
+}
+
+td:nth-child(2) {
+    vertical-align: middle;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-right: none;    
+}
+
+
+
+/* 나타나기 */
+
+.scroll_on {opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_top {transform: translate(0, -50px);}
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.scroll_on.type_left {transform: translate(-50px, 0);}
+.scroll_on.type_right {transform: translate(50px, 0);}
