@@ -1,0 +1,214 @@
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+*{margin: 0;padding: 0;}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: 'Gowun Batang';
+}
+img,fieldset,iframe{border:0 none}
+input,select,button{vertical-align:middle}
+label,button{cursor:pointer}
+
+/* top Icon style */
+.totop a img{
+    display: block; 
+    width: 17px;
+    height: 25px;
+    border-radius: 50%; 
+    padding: 10px 15px; 
+    vertical-align: middle;
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999; 
+    background-color: rgba(99, 99, 99, 0.7); 
+}
+
+
+#container2 {
+    background-color: #fff;
+    width: 100%; 
+    height: 700px;
+    padding-bottom: 5%;
+}
+
+#container2 h1{
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0 30px 0; 
+    color: rgb(32, 32, 32);
+    font-size: 1em; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#container2 .loginPage{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#container2 .loginPage .inputText{
+    padding: 30px 0 40px;
+}
+
+#container2 .loginPage .inputText p{
+    width: 70%; 
+    margin: 0 auto; 
+    
+
+}
+
+#container2 .loginPage .inputText #ida {
+    
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    
+    
+}
+
+
+
+#container2 .loginPage .inputText #pwa {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #dddddd;
+    
+    
+}
+
+#container2 .loginPage p input{
+    width: 100%; 
+    height: 30px; 
+    font-size: 0.7em; 
+    text-indent: 10px; 
+    border: 1px solid #aaaaaa;
+    outline: none;
+}
+
+
+#container2 .loginPage .inputBox{
+    width: 70%; 
+    margin: 0 auto; 
+    padding-bottom: 10px; 
+}
+
+#container2 .loginPage .inputBox input{
+        width: 100%;
+        height: 40px;
+        line-height: 15px;
+        border: 1px solid #3a3a3a; 
+        border-radius: 10px;
+        background-color: #333; 
+        padding: 10px 0; 
+        color: #fff; 
+        font-size: 1.0em; 
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: sans-serif;
+}
+
+
+
+#container2 .loginPage .joinSearch a{
+    display: block; 
+    width: 67.5%; 
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding: 5px; 
+    border: 1px solid #8b8b8b;
+    border-radius: 10px;
+    color: #585858; 
+    font-size: 0.9em; 
+    text-transform: uppercase; 
+    font-weight: 500; 
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+#container2 .loginPage .kakao {
+    display: block; 
+    width: 68.5%; 
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding: 5px;     
+    border-radius: 10px;
+    color: #585858; 
+    font-size: 0.8em;    
+    font-weight: 500; 
+    text-align: center;
+    position: relative;
+    background-color: #fff017;
+
+}
+
+#container2 .loginPage .kakao .kakao2 {    
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+
+#container2 .loginPage .kakao .kakaologin {
+    width: 100%;
+    margin: 0 auto;
+ 
+    margin-top: 2px;
+    background: url(../img/icon/kakao.png) no-repeat 0 2px ;
+    background-size: 20px;
+}
+
+#container2 .loginPage .kakao .kakaologin a{
+    font-family: sans-serif;
+    padding-left: 25px;
+}
+.serchbutton {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+
+
+}
+
+.serchbutton > ul {
+    width: 170px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    padding-left: 30px;
+
+}
+
+.serchbutton > ul > li {
+    list-style: none;
+    float: left;
+    font-weight: 600;
+    font-family: sans-serif;
+
+    
+}
+
+.serchbutton > ul > li > a{ 
+    color: #acacac;
+}
+
+.serchbutton > ul > li:after{content:' | ';display:inline; margin: 0 4px 0 2px; color: #acacac;}
+
+.serchbutton > ul > li:last-child:after{content:'';}
+
+
+
+
+
+
+

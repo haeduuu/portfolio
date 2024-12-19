@@ -1,0 +1,183 @@
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+*{margin: 0;padding: 0;}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: 'Gowun Batang';
+}
+
+
+/* top Icon style */
+.totop a img{
+    display: block; 
+    width: 17px;
+    height: 25px;
+    border-radius: 50%; 
+    padding: 10px 15px; 
+    vertical-align: middle;
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999; 
+    background-color: rgba(99, 99, 99, 0.7); 
+}
+
+
+#wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+
+
+#container3{
+
+    width: 100%; 
+    padding-bottom: 5%;
+
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+#container3 h1{
+    width: 100%; 
+    text-align: center;
+    padding: 60px 0 20px 0;
+    color: rgb(77, 77, 77); 
+    font-size: 1.2em;
+
+}
+
+#container3 .memo{
+    width: 90%; 
+    margin: 0 auto;
+}
+
+#container3 .memo p{
+    width: 100%; 
+    padding: 10px 0 30px; 
+    font-size: 0.9em; 
+    text-align: justify;
+}
+
+
+
+#container3 form h2{
+    width: 100%; 
+    margin: 0 auto; 
+    text-align: left;
+    font-size: 1.0em; 
+    padding: 10px 0 10px 0; 
+    color: rgb(32, 32, 32);
+}
+
+#container3 form .text1,
+#container3 form .text2 {
+    width: 90%;
+    margin: 0 auto;
+}
+#container3 form textarea{
+    width: 100%; 
+    margin: 0 auto; 
+    border: 1px solid #aaa; 
+    color: #999; 
+    height: 190px; 
+    overflow-x:hidden ;
+    overflow-y: scroll; 
+    resize: none; 
+    vertical-align: top; 
+    font-size: 0.7em;
+}
+
+
+#container3 form input[type="checkbox"]{display: none;}
+
+
+
+
+.agr1, .agr2{
+    width: 90%;
+    font-size: 0.9rem;  
+    font-weight: 500;  
+    text-align: right; 
+    margin: 20px auto; 
+    padding-bottom: 20px; 
+
+}
+
+.allagr{
+    width: 90%;
+    font-size: 0.9rem;  
+    font-weight: 500;  
+    text-align: right; 
+    margin: 20px auto; 
+
+}
+
+input.agr1 + label,
+input.agr2 + label {
+    background: url(../img/icon/off_check.png) no-repeat ;     
+    background-size:19px 19px; 
+    padding-left: 25px; 
+    
+}
+
+input.allagr + label {
+    background: url(../img/icon/off_check.png) no-repeat ;     
+    background-size:19px 19px; 
+    padding-left: 25px; 
+}
+
+input.agr1:checked + label,
+input.agr2:checked + label {
+    background: url(../img/icon/on_check.png) no-repeat ;     
+    background-size:19px 19px;  
+    padding-left: 25px; 
+}
+
+input.allagr:checked + label {
+    background: url(../img/icon/on_check.png) no-repeat ;     
+    background-size:19px 19px; 
+    padding-left: 25px; 
+}
+
+
+
+#container3 form .agrBtn{
+    width: 90%; 
+    margin: 30px auto; 
+    padding-bottom: 50px;
+    display: flex;
+}
+
+#container3 form .agrBtn input:first-child{
+    width: 30%; 
+    margin: 10px; 
+    padding: 5px 0; 
+    border: 1px solid #6d6d6d; 
+    background: #494949; 
+    color: #fff; 
+    font-weight: bold; 
+    cursor: pointer;
+    margin: 0 auto; 
+}
+
+
+#container3 form .agrBtn input:last-child{
+    width: 30%; 
+    margin: 10px; 
+    padding: 5px 0; 
+    border: 1px solid #969696; 
+    background: #a7a7a7; 
+    color: #fff; 
+    font-weight: bold; 
+    margin: 0 auto; 
+    cursor: pointer;
+}

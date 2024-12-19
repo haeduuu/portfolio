@@ -1,0 +1,217 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+
+*{margin: 0;padding: 0;}
+a { text-decoration: none;color: #333;}
+body {font-family: 'Gowun Batang';}
+li {list-style: none;}
+
+
+
+
+#container {width: 100%; height: auto;position: relative;}
+
+.tab {
+overflow: hidden;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+display: flex;
+justify-content: space-around;
+}
+
+#container .titbox{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px; 
+    font-size: 1.4em; 
+    font-family: 'Times New Roman';
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+#container .tab {
+    width: 100%; 
+    height: 53px;
+    text-align: center; 
+    font-size: 12px; 
+    color: #5c5c5c; 
+    text-decoration:none; 
+    font-family:'Times New Roman'; 
+    font-weight: 700;
+    position: relative;
+}
+
+#container .tab .button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    background: url(../img/icon/arrow_left.png) 10px 3px no-repeat;
+    background-size: contain;
+    cursor: pointer;    
+
+}
+
+#container .tab > h1 {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+}
+
+
+
+#container .cont1 {
+    width: 100%; 
+    height: auto; 
+    float: left;
+}
+
+#container .cont1_img {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#container .cont1_img img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#container .cont1 h1{
+    height: 70px;
+    line-height: 70px;
+    text-align: center; 
+    font-size: 1.9em; 
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #333;
+
+
+}
+
+#container .cont1 p{
+    text-align: center; 
+    font-size: 1em; 
+    padding-bottom: 10%;
+    font-weight: 600;
+    color: #666666;
+
+}
+
+
+#container .price {
+    width: 100%; 
+    height: 200px;  
+    float: left;
+    background-color: #f7f7f7;
+}
+
+#container .price .pritit {
+    width: 70%;  
+    margin: 30px auto;
+    border-bottom: 2px solid #b6b6b6;
+}
+
+#container .price h3 {
+    text-align: center; 
+    padding-bottom: 2%; 
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+#container .price .pri{
+    width: 30%;  
+    position: absolute; 
+    left: 35%; 
+}
+
+
+#container .price .pri li p{
+    float: left; 
+    font-weight: bold;
+}
+
+#container .price .pri li span{
+    float: right;
+}
+
+#container .material {
+    width: 100%; 
+    height: 250px; 
+    float: left;
+}
+
+#container .material .matetit{
+    width: 70%;  
+    margin: 30px auto;
+    border-bottom: 2px solid #b6b6b6;
+}
+
+#container .material h3 {    text-align: center; 
+    padding-bottom: 2%; 
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+#container .material ul {
+    width: 80%; 
+    height: 100px;  
+margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+} 
+#container .material ul li{
+    width: 20%; 
+
+    list-style: none; 
+
+}
+
+#container .material ul li p{
+    text-align: center; 
+    font-size: 0.9em;
+}
+
+#container .material ul li img{
+    width: 100%;
+}
+
+#container .order { 
+    width: 100%; 
+    height: 200px;  
+    float: left;
+}
+
+
+#container .order a{
+    display: block; 
+    width: 30%; 
+    height: 40px;
+    line-height: 40px; 
+    margin: 25px auto; 
+    text-align: center; 
+    border: 2px solid #999; 
+    text-decoration: none;
+    color: #999;
+    font-weight: 500;  
+    font-family: 'san serif';
+    padding-bottom: 1%; 
+    font-size: 1em; 
+    border-radius: 10px;
+}
+
+#container .order a:hover {
+    border: 1px solid #999; 
+    background-color: #999;
+    color: #fff;
+}

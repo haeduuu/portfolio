@@ -1,0 +1,149 @@
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+*{margin: 0;padding: 0;}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: sans-serif;
+}
+
+.nav {
+    font-family: 'Gowun Batang';
+}
+
+/* top Icon style */
+.totop a img{
+    display: block; 
+    width: 17px;
+    height: 25px;
+    border-radius: 50%; 
+    padding: 10px 15px; 
+    vertical-align: middle;
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999; 
+    background-color: rgba(99, 99, 99, 0.7); 
+}
+
+
+#wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+/* 회원가입폼 */
+
+#container4{ 
+    background-color: #ffffff; 
+    width: 100%; 
+    padding-bottom: 10%;
+
+}
+
+.blind {
+    display: none;
+}
+
+#container4 h1{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 40px 0; 
+    color: rgb(77, 77, 77); 
+    font-size: 1.0em; 
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#container4 form{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px; 
+
+}
+
+#container4 form table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+#container4 form tbody th{
+    width: 30%; 
+    padding: 21px 0; 
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #5a5a5a;
+}
+
+#container4 form td{
+    width: 70%; 
+    padding: 5px 0;
+    padding-left: 10px; 
+    text-align: left;
+    font-size: 0.7em;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+text {
+    font-size: 0.2em;
+}
+
+#container4 form td input {
+    width: 85%; 
+    height: 25px; 
+    font-size: 0.7em; 
+    text-indent: 10px; 
+    border: 1px solid #aaaaaa;
+    outline: none;
+    border-radius: 50px;
+}
+
+#container4 form #job{
+    width: 85%; 
+    height: 25px; 
+    font-size: 0.7em; 
+    text-indent: 10px; 
+    border: 1px solid #aaaaaa;
+    outline: none;
+    border-radius: 50px;
+} 
+
+
+#container4 form td select{width: 80%;}
+
+#container4 #confirm {
+    text-align: center;
+    padding: 10px 0; 
+    margin:20px 0 20px;
+}
+
+#container4 #confirm input:first-child{
+    width: 30%; 
+    margin: 10px; 
+    padding: 5px 0; 
+    border: 1px solid #6d6d6d; 
+    background: #494949; 
+    color: #fff; 
+    font-weight: 400; 
+    cursor: pointer;
+    margin: 0 auto; 
+}
+
+#container4 #confirm input:last-child{
+    width: 30%; 
+    margin: 10px; 
+    padding: 5px 0; 
+    border: 1px solid #969696; 
+    background: #a7a7a7; 
+    color: #fff; 
+    font-weight: 400; 
+    margin: 0 auto; 
+    cursor: pointer;
+}  
+         

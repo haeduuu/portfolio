@@ -1,0 +1,206 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+*{margin: 0;padding: 0;}
+a {text-decoration: none; color: #333;}
+body {font-family: 'Gowun Batang';}
+li {list-style: none;}
+img,fieldset,iframe{border:0 none}
+input,select,button{vertical-align:middle}
+label,button{cursor:pointer}
+
+
+
+#container {width: 100%; height: 700px;position: relative;}
+
+.tab {
+overflow: hidden;
+margin-top: 60px;
+display: flex;
+justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+width: 40%;
+height: 50px;
+line-height: 20px;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-family: 'Times New Roman';
+font-weight: 500;
+font-size: 14px;
+color: #333;
+background-color: #fff;
+border: 1px solid #eeeeee;
+border-bottom: 1px solid #808080;
+
+
+}
+
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+font-weight: 700;
+border: 1px solid #808080;
+border-bottom: 1px solid #eeeeee;
+background-color: #fafafa;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+border-top: none;
+}
+
+
+.tabcontent.active {
+display: block;
+}
+
+
+
+
+#container h1{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px; 
+    font-size: 1.4em; 
+    font-family: 'Times New Roman';
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+#container .tabcontent{
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+#container .tabcontent .inputText{
+    padding: 60px 0 60px 0;
+}
+
+#container .tabcontent .inputText p{
+    width: 70%; 
+    margin: 0 auto; 
+    
+
+}
+
+#container .tabcontent .inputText #ida {
+    
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    
+    
+}
+
+
+
+#container .tabcontent .inputText #pwa {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #dddddd;
+    
+    
+}
+
+#container .tabcontent p input{
+    width: 100%; 
+    height: 30px; 
+    font-size: 0.7em; 
+    text-indent: 10px; 
+    border: 1px solid #aaaaaa;
+    outline: none;
+}
+
+
+#container .tabcontent .inputBox{
+    width: 70%; 
+    margin: 0 auto; 
+    padding-bottom: 10px; 
+}
+
+#container .tabcontent .inputBox input{
+        width: 100%;
+        height: 40px;
+        line-height: 15px;
+        margin: 2px auto;
+        border: 1px solid #3a3a3a; 
+        border-radius: 10px;
+        background-color: #333; 
+        padding: 10px 0; 
+        color: #fff; 
+        font-size: 1.0em; 
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: sans-serif;
+}
+
+#container .tabcontent .inputBox_2{
+    width: 70%; 
+    margin: 0 auto; 
+    padding-bottom: 10px; 
+}
+
+#container .tabcontent .inputBox_2 input{
+        width: 100%;
+        height: 40px;
+        margin: 5px auto;
+        border: 1px solid #3a3a3a; 
+        border-radius: 10px;
+        background-color: #333; 
+         
+        color: #fff; 
+        font-size: 0.9em; 
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: sans-serif;
+}
+
+
+
+/* serch button style */
+.serchbutton {
+    width: 100%;
+    height: 40px;
+    margin: 30px auto;
+
+
+}
+
+.serchbutton > ul {
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    padding-left: 30px;
+
+}
+
+.serchbutton > ul > li {
+    list-style: none;
+    float: left;
+    font-weight: 600;
+    font-family: sans-serif;
+
+    
+}
+
+.serchbutton > ul > li > a{ 
+    color: #acacac;
+}
+
+.serchbutton > ul > li:after{content:' | ';display:inline; margin: 0 4px 0 2px; color: #acacac;}
+
+.serchbutton > ul > li:last-child:after{content:'';}
