@@ -1,0 +1,359 @@
+@charset 'utf-8';
+
+html,body{width: 100%;height: 100%;}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+text{text-decoration: none;} 
+a{text-decoration: none;}
+img{border: 0; vertical-align:top}
+i,em,address{font-style:normal}
+
+#header {
+    width: 100%; 
+    height: 100px; 
+}
+
+#header .inner{
+    position: relative; 
+    margin: 0 auto; 
+    max-width: 1200px;
+    height: 100px;
+}
+
+#header .inner .logo {
+    padding: 15px; 
+}
+
+.mlist{
+    width: 90%;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    z-index: 200;
+    width: 800px;
+}
+
+.mlist::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+#header .inner .mlist li{
+    width: 12.5%;
+    float: left; 
+    text-align: center;
+}
+
+#header .inner .mlist li a{
+    color: black; 
+    font-style: initial; 
+    font-weight: 600; 
+    display: block;
+}
+
+#visual {
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+#visual .bxslider_clear {
+    margin: 0 auto;
+}
+
+#container { 
+    max-width: 1200px;
+    height: 800px;  
+    margin: 0 auto; 
+
+}
+
+
+#container .contents1 {
+    width: 50%;
+    height: auto; 
+    float: left;
+}
+#container .contents1:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#container .contents1 h2 {
+    width: 100%;
+    height: 43px; 
+    background-color: #900000; 
+}
+#container .contents1 h2 {
+    color: #fff; 
+    text-align: center; 
+    padding-top: 7px; 
+}
+
+
+
+.news {
+    width: 95%;
+    height: 220px;
+    margin: 0 auto;
+    border: 3px solid #900000;
+    margin: 2%;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+.middle,
+.hight {
+    width: 95%;
+    height: 220px;
+    margin: 0 auto;
+    border: 3px solid #505050;
+    margin: 2%;
+    border-radius: 30px;
+    position: relative;
+}
+
+.news .subtit {
+    color: #fff;
+    height: 45px;    
+    background-color: #900000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.middle .subtit,
+.hight .subtit {
+    color: #fff;
+    height: 45px;    
+    background-color: #505050;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.maincont > p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.maincont .maincont-1 {
+    font-size: 25px;
+}
+
+.newssubimg .newsimg1 { 
+    position: absolute;
+    width: 100px;
+    bottom: 40px;
+    left: 10px;
+}
+
+.newssubimg .newsimg2 {
+    position: absolute;
+    width: 100px;
+    bottom: 50px;
+    right: 10px;
+}
+
+.news .maincont {
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.middlecont {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.middlecont ul {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.middlecont ul li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin: 0 auto;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.hightcont {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.hightcont ul {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.hightcont ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin: 0 auto;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#container .contents2 {
+    width: 50%;
+    height: auto; 
+    float: right;
+}
+#container .contents2 .morep {color : #d10000}
+
+
+#container .contents2 .port,
+#container .contents2 .inter{
+    width: 100%; 
+    height: 360px; 
+    border-bottom: 3px solid #e7e7e7;  
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#container .contents2 .port .porttit,
+#container .contents2 .inter .intertit {
+    width: 100%; 
+    height: 48px; 
+    float: left;
+    border-bottom: #900000 solid 3px; 
+}
+
+#container .contents2 .porttit > h2 {
+    font-size: 25px;
+    text-align: left;
+    line-height: 40px;
+    font-style: initial; 
+    font-size: 20px;
+    font-weight:bolder; 
+    padding-left: 20px;
+}
+
+
+#container .contents2 .porttit .po{
+    color: #900000; 
+    font-size: 25px;
+}
+
+#container .contents2 .port .more,
+#container .contents2 .inter .more {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 13px;
+}
+
+
+
+#container .contents2 .port .mov1,
+#container .contents2 .port .mov2,
+#container .contents2 .inter .view1,
+#container .contents2 .inter .view2 {
+    width: 100%; 
+    height: 130px; 
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 20px;    
+}
+
+
+#container .contents2 .port .mov1 img,
+#container .contents2 .port .mov2 img,
+#container .contents2 .inter .view1 img,
+#container .contents2 .inter .view2 img {
+    width: 100%; 
+}
+
+#container .contents2 .port .mov1 p,
+#container .contents2 .port .mov2 p {
+    color: #000; 
+    font-size: 13px; 
+    padding-left: 12px; 
+    font-weight: 500;
+}
+
+#container .contents2 .inter .po{
+    color: #900000;
+    font-size: 25px; 
+}
+
+#container .contents2 .inter .view1 p,
+#container .contents2 .inter .view2 p {
+    color: #000; 
+    font-size: 13px; 
+    padding-left: 12px; 
+    font-weight: 500;
+}
+
+
+
+/* footer style */
+#footer {
+    width: 100%;
+    height: 180px; 
+    background-color: #900000;
+    float: left;
+}
+
+#footer .finner {
+    width: 100%;
+    height: 180px; 
+    margin: 0 auto;  
+    position: relative;
+}
+
+#footer .flogo{
+    position: absolute; 
+    height: 25px;  
+    left: 220px; 
+    top: 80px; 
+    display: flex;
+} 
+
+#footer .call{
+    position: absolute; 
+    left: 480px; 
+    top: 70px;
+}
+
+#footer .call h1 {
+    color: #fff; 
+    font-size: 18px; 
+}
+
+#footer .call img {
+    width:25%; 
+    padding: 4px; 
+    padding-left: 15px;
+}
+
+#footer .copy {
+    position: absolute; 
+    top: 50px; 
+    right: 200px; 
+    margin: 0 auto; 
+    color: #fff; 
+    text-align: center; 
+    font-size: 8px;
+}
+
+
