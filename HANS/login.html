@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/common.js"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body id="body">
+    <div class="totop">
+        <a href="#top"><img src="img/btn_totop.png" alt="top"></a>
+    </div>
+    <div id="wrap">
+
+        <div id="header">
+            <div class="headerwrap clear">
+                <h1  class="logo"><a href="index.html"><img src="img/logo/logo.png" alt="logo"></a></h1>
+                <p class="menuBtn">menu</p>
+                <p class="search_bt">search</p>
+
+                <nav class="nav">
+                    <ul class="clear">   
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="custom.html">CUSTOM</a></li>
+                        <li><a href="order.html">ORDER</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="join.html">join</a></li>
+                    </ul>
+                </nav>
+
+                <div class="search_wrap">
+                    <form action="#" class="search_box">
+                        <fieldset>
+                            <legend class="blind"></legend>
+                            <input type="search" placeholder="검색어입력">
+                            <input type="image" class="searchBtn" src="img/btn_search2.png" alt="검색">
+                        </fieldset> 
+                    </form>
+                </div> <!-- search end-->
+            </div>
+                    <!-- search폼 -->
+
+        </div><!--header end-->
+
+        <!-- search폼 -->
+        <div class="search_wrap">
+          <form action="#" class="search_box">
+              <fieldset>
+                  <legend class="blind">검색폼</legend>
+                  <input type="search" placeholder="검색어입력">
+                  <input type="image" class="searchBtn" src="img/total_SearchBtn.png" alt="검색">
+              </fieldset> 
+          </form>
+        </div> <!-- search end-->
+      </div> <!-- header end-->
+
+
+      <!--login 폼-->
+      <section id="container2">
+        <h1>Login</h1>
+        <div class="loginPage">
+            <form action="index.html" name="frm" method="post" onsubmit="return idpwCheck()">
+                <fieldset>
+                    <legend class="blind"></legend>
+                    <div class="inputText">
+                        <p>
+                            <label for="id" class="blind"></label>
+                            <input type="text" name="ida" id="ida" 
+                            placeholder="ID" title="ID">
+                        </p>
+                        <p>
+                            <label for="pwa" class="blind"></label>
+                            <input type="password" name="pwa" id="pwa" 
+                            placeholder="PASSWORD" title="PASSWORD">
+                        </p>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Login" >
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="joinSearch">
+                <a href="join.html">join Member</a>
+            </div>
+            <div class="kakao">
+                <div class="kakao2">
+                    <div class="kakaologin"><a href="#">카카오 로그인</a></div>
+                </div>      
+            </div>
+            
+            <div class="serchbutton">
+                <ul>
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+      </section>
+
+
+
+        <footer id="footer">
+            <h1><a href="#" class="flogo"><img src="img/logo/flogo.png" alt="flogo"></a></h1>
+            <div class="info">
+                <address class="address">
+                ㈜한스제과 : 대표이사 안영식 <br>
+                경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호<br>
+                </address>
+                <p class="copy">Copyright 2024 &copy; HANS CAKE. All Right Reserved</p>
+            </div>
+            <ul class="snsli">
+                <li><a href="#"><img src="img/icon/instagram.png" alt="insta"></a></li>
+                <li><a href="#"><img src="img/icon/youtube.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="img/icon/facebook.png" alt="facebook"></a></li>
+            </ul>
+        </footer><!--footer end-->
+    </div>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+
+    <script src="js/common.js"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="headerwrap clear">
+            <h1  class="logo"><a href="index.html"><img src="img/logo/logo.png" alt="logo"></a></h1>
+            <p class="menuBtn">menu</p>
+            <p class="search_bt">search</p>
+
+            <nav class="nav">
+                <ul class="clear">   
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="custom.html">CUSTOM</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="join.html">join</a></li>
+                </ul>
+            </nav>
+
+            <div class="search_wrap">
+                <form action="#" class="search_box">
+                    <fieldset>
+                        <legend class="blind"></legend>
+                        <input type="search" placeholder="검색어입력">
+                        <input type="image" class="searchBtn" src="img/btn_search2.png" alt="검색">
+                    </fieldset> 
+                </form>
+            </div> <!-- search end-->
+        </div>
+                <!-- search폼 -->
+
+    </div><!--header end-->
+ 
+    <div id="container">
+        <h1>MENU</h1>
+        <div class="tab">
+            <button class="tablinks active" onclick="openMenu(event, 'Cake')">Cake</button>
+            <button class="tablinks" onclick="openMenu(event, 'Tart')">Tart</button>
+            <button class="tablinks" onclick="openMenu(event, 'Drink')">Drink</button>
+        </div>
+
+        <div id="Cake" class="tabcontent active cake">
+            <ul>
+                <li class="cakelist"><a href="product_menu1.html"><img src="img/product/cake_1.jpeg" alt="초코딸기 생크림 케이크">
+                    <div class="price">
+                        <h2>초코딸기 생크림 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">17% </span>36,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">4.9</b> 리뷰 431</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_2.jpeg" alt="크림치즈 망고 케이크">
+                    <div class="price">
+                        <h2>크림치즈 망고 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">5% </span>29,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">4.8</b> 리뷰 205</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_3.jpg" alt="청포도 생크림 케이크">
+                    <div class="price">
+                        <h2>청포도 생크림 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">12% </span>31,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">4.5</b> 리뷰 103</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_4.jpg" alt="파인애플 생크림 케이크">
+                    <div class="price">
+                        <h2>파인애플 생크림 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">8% </span>32,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 124</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="cakelist"><a href="#"><img src="img/product/cake_5.jpg" alt="소보로 비스크 케이크">
+                    <div class="price">
+                        <h2>소보로 비스크 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">3% </span>34,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 751</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_6.jpg" alt="단호밤 케이크">
+                    <div class="price">
+                        <h2>단호밤 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">13% </span>21,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 137</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_7.jpg" alt="쿠키앤크림 스트로베리">
+                    <div class="price">
+                        <h2>쿠키앤크림 스트로베리 </h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">5% </span>34,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">4.3</b> 리뷰 761</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_12.jpg" alt="무화과 생크림 케이크">
+                    <div class="price">
+                        <h2>무화과 생크림 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">10% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 403</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="cakelist"><a href="#"><img src="img/product/cake_8.jpg" alt="말차 소보로 케이크">
+                    <div class="price">
+                        <h2>말차 소보로 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">2% </span>25,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">4.2</b> 리뷰 132</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_9.jpg" alt="얼그베리 케이크">
+                    <div class="price">
+                        <h2>얼그베리 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">15% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 149</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_10.jpg" alt="얼그레이 자몽 케이크">
+                    <div class="price">
+                        <h2>얼그레이 자몽 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">16% </span>29,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 375</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="cakelist"><a href="#"><img src="img/product/cake_11.jpg" alt="복숭아 생크림 케이크">
+                    <div class="price">
+                        <h2>복숭아 생크림 케이크</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">12% </span>35,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 103</p>
+                    </div>
+                    </a>
+                </li>              
+                
+            </ul>
+            <div class="morebox">
+                <p class="more">more</p>
+            </div>
+        </div>
+
+        <div id="Tart" class="tabcontent tart">
+            <ul>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_1.jpg" alt="무화과 크림치즈 타르트">
+                    <div class="price">
+                        <h2>무화과 크림치즈 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">17% </span>34,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 592</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_2.jpg" alt="애플망고 타르트">
+                    <div class="price">
+                        <h2>애플망고 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">20% </span>20,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span><b style="color: #333;">5.0</b> 리뷰 403</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_3.jpg" alt="피치피치 타르트">
+                    <div class="price">
+                        <h2>피치피치 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">5% </span>26,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 203</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_4.jpg" alt="말차 크림치즈 타르트">
+                    <div class="price">
+                        <h2>말차 크림치즈 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">2% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">4.4</b> 리뷰 215</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="tartlist"><a href="#"><img src="img/product/tart_5.jpg" alt="망고 스프레드 타르트">
+                    <div class="price">
+                        <h2>망고 스프레드 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">10% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">4.8</b> 리뷰 371</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_6.jpg" alt="블루베리 타르트">
+                    <div class="price">
+                        <h2>블루베리 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">12% </span>25,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">4.3</b> 리뷰 643</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_7.jpg" alt="바나나 캬라멜 타르트">
+                    <div class="price">
+                        <h2>바나나 캬라멜 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">13% </span>26,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">4.9</b> 리뷰 478</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_8.jpg" alt="생딸기 크림치즈 타르트">
+                    <div class="price">
+                        <h2>생딸기 크림치즈 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">10% </span>38,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 744</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="tartlist"><a href="#"><img src="img/product/tart_9.jpg" alt="과일타르트 세트">
+                    <div class="price">
+                        <h2>과일타르트 세트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">7% </span>40,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                            <b style="color: #333;">5.0</b> 리뷰 1003</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_10.jpg" alt="생과일 베이비슈 세트">
+                    <div class="price">
+                        <h2>생과일 베이비슈 세트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">2% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                            <b style="color: #333;">4.2</b> 리뷰 303</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_11.jpg" alt="과일 생크림 사브레">
+                    <div class="price">
+                        <h2>과일 생크림 사브레</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">4% </span>24,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 219</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="tartlist"><a href="#"><img src="img/product/tart_12.jpg" alt="마카롱 생딸기 타르트">
+                    <div class="price">
+                        <h2>마카롱 생딸기 타르트</h2>
+                        <p style="font-weight: 900;"><span style="color: rgb(255, 110, 110); ">6% </span>30,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                            <b style="color: #333;">4.0</b> 리뷰 103</p>
+                    </div>
+                    </a>
+                </li>            
+                
+            </ul>
+            <div class="morebox2">
+                <p class="more2">more</p>
+            </div>
+        </div>
+
+        <div id="Drink" class="tabcontent drink">
+            <ul>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_1.jpg" alt="레몬에이드">
+                    <div class="price">
+                        <h2>레몬에이드</h2>
+                        <p style="font-weight: 900;">5,000원</p><br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 53</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_2.png" alt="쿠키쉐이크">
+                    <div class="price">
+                        <h2>쿠키쉐이크</h2>
+                        <p style="font-weight: 900;">7,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 13</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_3.jpg" alt="코카콜라">
+                    <div class="price">
+                        <h2>코카콜라</h2>
+                        <p style="font-weight: 900;">4,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                            <b style="color: #333;">5.0</b> 리뷰 23</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_4.jpg" alt="아메리카노">
+                    <div class="price">
+                        <h2>아메리카노</h2>
+                        <p style="font-weight: 900;">5,500원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 73</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="drinklist"><a href="#"><img src="img/product/drink_5.jpg" alt="딸기 쉐이크">
+                    <div class="price">
+                        <h2>딸기 쉐이크</h2>
+                        <p style="font-weight: 900;">7,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                            <b style="color: #333;">5.0</b> 리뷰 41</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_6.jpg" alt="아이스티">
+                    <div class="price">
+                        <h2>아이스티</h2>
+                        <p style="font-weight: 900;">6,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 9</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_7.jpg" alt="레몬 아이스티">
+                    <div class="price">
+                        <h2>레몬 아이스티</h2>
+                        <p style="font-weight: 900;">7,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 43</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_8.jpg" alt="코코넛 쉐이크">
+                    <div class="price">
+                        <h2>코코넛 쉐이크</h2>
+                        <p style="font-weight: 900;">8,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 53</p>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="drinklist"><a href="#"><img src="img/product/drink_9.jpg" alt="망고 쉐이크">
+                    <div class="price">
+                        <h2>망고 쉐이크</h2>
+                        <p style="font-weight: 900;">9,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 16</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_10.jpg" alt="망고 쥬스">
+                    <div class="price">
+                        <h2>망고 쥬스</h2>
+                        <p style="font-weight: 900;">6,500원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 19</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_11.jpg" alt="수박 에이드">
+                    <div class="price">
+                        <h2>수박 에이드</h2>
+                        <p style="font-weight: 900;">10,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 40</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="drinklist"><a href="#"><img src="img/product/drink_12.jpg" alt="라임 에이드">
+                    <div class="price">
+                        <h2>라임 에이드</h2>
+                        <p style="font-weight: 900;">9,000원</p> <br>
+                        <p style="font-size: 12px; color: #a8a8a8;"><span style="color: rgb(255, 176, 29);">★ </span>
+                        <b style="color: #333;">5.0</b> 리뷰 23</p>
+                    </div>
+                    </a>
+                </li>              
+                
+            </ul>
+            <div class="morebox3">
+                <p class="more3">more</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer id="footer">
+        <h1><a href="#" class="flogo"><img src="img/logo/flogo.png" alt="flogo"></a></h1>
+        <div class="info">
+            <address class="address">
+            ㈜한스제과 : 대표이사 안영식 <br>
+            경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호<br>
+            </address>
+            <p class="copy">Copyright 2024 &copy; HANS CAKE. All Right Reserved</p>
+        </div>
+        <ul class="snsli">
+            <li><a href="#"><img src="img/icon/instagram.png" alt="insta"></a></li>
+            <li><a href="#"><img src="img/icon/youtube.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="img/icon/facebook.png" alt="facebook"></a></li>
+        </ul>
+    </footer><!--footer end-->
+
+<script>
+    function openMenu(evt, cityMenu) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityMenu).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        }
+</script>
+
+<!-- more button script -->
+<script>
+    $(function(){
+        $(".cakelist").slice(0, 4).show();
+            $(".more").click(function(e){ // click event for load more
+            e.preventDefault();
+            $(".cakelist:hidden").slice(0, 4).show(); // select next 4 hidden divs and show them
+            if($(".cakelist:hidden").length == 0){ // check if any hidden divs still exist
+                // alert("No more divs"); // alert if there are none left
+                $('.more').hide();
+                }
+        });
+
+        $(".tartlist").slice(0, 4).show();
+            $(".more2").click(function(e){ // click event for load more
+            e.preventDefault();
+            $(".tartlist:hidden").slice(0, 4).show(); // select next 4 hidden divs and show them
+            if($(".tartlist:hidden").length == 0){ // check if any hidden divs still exist
+                // alert("No more divs"); // alert if there are none left
+                $('.more2').hide();
+                }
+        });
+
+
+        // 스크립트 클래스 바꿔주기
+        
+        $(".drinklist").slice(0, 4).show();
+            $(".more3").click(function(e){ // click event for load more
+            e.preventDefault();
+            $(".drinklist:hidden").slice(0, 4).show(); // select next 4 hidden divs and show them
+            if($(".drinklist:hidden").length == 0){ // check if any hidden divs still exist
+                // alert("No more divs"); // alert if there are none left
+                $('.more3').hide();
+                }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+    <script src="js/common.js"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="headerwrap clear">
+            <h1  class="logo"><a href="index.html"><img src="img/logo/logo.png" alt="logo"></a></h1>
+            <p class="menuBtn">menu</p>
+            <p class="search_bt">search</p>
+
+            <nav class="nav">
+                <ul class="clear">   
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="custom.html">CUSTOM</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="join.html">join</a></li>
+                </ul>
+            </nav>
+
+            <div class="search_wrap">
+                <form action="#" class="search_box">
+                    <fieldset>
+                        <legend class="blind"></legend>
+                        <input type="search" placeholder="검색어입력">
+                        <input type="image" class="searchBtn" src="img/btn_search2.png" alt="검색">
+                    </fieldset> 
+                </form>
+            </div> <!-- search end-->
+        </div>
+                <!-- search폼 -->
+
+    </div><!--header end-->
+ 
+    <div id="container">
+        <h1>주문 배송 조회</h1>
+        <div class="tab">
+            <button class="tablinks active" onclick="openMenu(event, 'Cake')">회원</button>
+            <button class="tablinks" onclick="openMenu(event, 'Tart')">비회원 주문조회</button>
+        </div>
+
+        <div id="Cake" class="tabcontent active cake">
+            <form action="index.html" name="frm" method="post" 
+            onsubmit="return idpwCheck()">
+                <fieldset>
+                    <legend class="blind"></legend>
+                    <div class="inputText">
+                        <p>
+                            <label for="id" class="blind"></label>
+                            <input type="text" name="ida" id="ida" 
+                            placeholder="ID" title="ID">
+                        </p>
+                        <p>
+                            <label for="pwa" class="blind"></label>
+                            <input type="password" name="pwa" id="pwa" 
+                            placeholder="PASSWORD" title="PASSWORD">
+                        </p>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Login">
+                    </div>
+                </fieldset>
+            </form>
+            <div class="serchbutton">
+                <ul>
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Tart" class="tabcontent tart">
+            <form action="index.html" name="frm" method="post" 
+            onsubmit="return idpwCheck()">
+                <fieldset>
+                    <legend class="blind"></legend>
+                    <div class="inputText">
+                        <p>
+                            <label for="id" class="blind"></label>
+                            <input type="text" name="ida" id="ida" 
+                            placeholder="비회원 주문번호" title="ID">
+                        </p>
+                        <p>
+                            <label for="pwa" class="blind"></label>
+                            <input type="password" name="pwa" id="pwa" 
+                            placeholder="비회원 주문 비밀번호" title="PASSWORD">
+                        </p>
+                    </div>
+                    <div class="inputBox_2">
+                        <input type="submit" value="조회">
+                        <input type="submit" value="회원가입">
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer id="footer">
+        <h1><a href="#" class="flogo"><img src="img/logo/flogo.png" alt="flogo"></a></h1>
+        <div class="info">
+            <address class="address">
+            ㈜한스제과 : 대표이사 안영식 <br>
+            경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호<br>
+            </address>
+            <p class="copy">Copyright 2024 &copy; HANS CAKE. All Right Reserved</p>
+        </div>
+        <ul class="snsli">
+            <li><a href="#"><img src="img/icon/instagram.png" alt="insta"></a></li>
+            <li><a href="#"><img src="img/icon/youtube.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="img/icon/facebook.png" alt="facebook"></a></li>
+        </ul>
+    </footer><!--footer end-->
+
+<script>
+    function openMenu(evt, cityMenu) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityMenu).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        }
+</script>
+
+<!-- more button script -->
+
+</script>
+</body>
+</html>

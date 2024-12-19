@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="css/join2.css">
+    <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body id="body">
+    <div class="totop">
+        <a href="#top"><img src="img/btn_totop.png" alt="top"></a>
+    </div>
+    <div id="wrap">
+
+        <div id="header">
+            <div class="headerwrap clear">
+                <h1  class="logo"><a href="index.html"><img src="img/logo/logo.png" alt="logo"></a></h1>
+                <p class="menuBtn">menu</p>
+                <p class="search_bt">search</p>
+
+                <nav class="nav">
+                    <ul class="clear">   
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="custom.html">CUSTOM</a></li>
+                        <li><a href="order.html">ORDER</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="join.html">join</a></li>
+                    </ul>
+                </nav>
+
+                <div class="search_wrap">
+                    <form action="#" class="search_box">
+                        <fieldset>
+                            <legend class="blind"></legend>
+                            <input type="search" placeholder="검색어입력">
+                            <input type="image" class="searchBtn" src="img/btn_search2.png" alt="검색">
+                        </fieldset> 
+                    </form>
+                </div> <!-- search end-->
+            </div>
+                    <!-- search폼 -->
+
+        </div><!--header end-->
+
+
+        <section id="container4">
+            <h1>회원가입</h1>
+            <form action="index.html" name="join" method="post" onsubmit="return formCheck()">
+               <table>
+                   <caption class="blind">회원가입양식</caption>
+                   <colgroup>
+                    <col width="20%">
+                    <col width="*">
+                   </colgroup>
+                   <tbody>
+                     <tr>
+                       <th><label for="id">아이디</label></th>
+                       <td>
+                           <input type="text" name="id" id="id" maxlength="25"
+                           placeholder="아이디">
+                           <br> *8자리이상 문자입력
+                       </td>
+                     </tr>
+                     <tr>
+                       <th><label for="pw">비밀번호</label></th>
+                       <td>
+                           <input type="password" name="pw" id="pw" placeholder="비밀번호" maxlength="15">
+                           <br> *8자리이상 문자입력
+                       </td>
+                     </tr>
+                     <tr>
+                       <th><label for="irum">회원명</label></th>
+                       <td>
+                           <input type="text" name="irum" id="irum"  placeholder="회원명" maxlength="25">
+                           <br> *8자리이상 문자입력
+                       </td>
+                     </tr>
+                     <tr>
+                       <th><label for="email">이메일</label></th>
+                       <td>
+                           <input type="text" name="email" id="email" placeholder="이메일" maxlength="50">
+                       </td>
+                     </tr>
+                     <tr>
+                       <th><label for="hp">HP</label></th>
+                       <td>
+                           <input type="text" name="hp" id="hp" placeholder="휴대폰번호" maxlength="13">
+                           <br> *지역번호를포함 숫자만입력
+                       </td>
+                     </tr>
+                     <tr>
+                       <th><label for="job">직업</label></th>
+                       <td>
+                          <select name="job" id="job">
+                           <option value="--">직업을 선택하세요</option>
+                           <option value="웹디자이너">웹디자이너</option>
+                           <option value="웹퍼블리셔">웹퍼블리셔</option>
+                           <option value="웹개발자">웹개발자</option>
+                           <option value="웹기획자">웹기획자</option>
+                          </select>
+                           
+                       </td>
+                     </tr>        
+       
+                   </tbody>
+               </table> 
+               <p id="confirm">
+                   <input type="submit" value="회원가입" location.href = "index.html";>
+                   <input type="reset" value="다시쓰기">
+               </p>       
+            </form>
+           </section>
+
+
+       <footer id="footer">
+        <h1><a href="#" class="flogo"><img src="img/logo/flogo.png" alt="flogo"></a></h1>
+        <div class="info">
+            <address class="address">
+            ㈜한스제과 : 대표이사 안영식 <br>
+            경기 안양시 동안구 시민대로 401 대륭테크노타운 15차 B111호<br>
+            </address>
+            <p class="copy">Copyright 2024 &copy; HANS CAKE. All Right Reserved</p>
+        </div>
+        <ul class="snsli">
+            <li><a href="#"><img src="img/icon/instagram.png" alt="insta"></a></li>
+            <li><a href="#"><img src="img/icon/youtube.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="img/icon/facebook.png" alt="facebook"></a></li>
+        </ul>
+    </footer><!--footer end-->
+    </div>
+
+    <script src="js/common.js"></script>
+
+
+</body>
+</html>
+
+
