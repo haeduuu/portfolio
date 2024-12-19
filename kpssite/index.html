@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한전KPS</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/tab.js"></script>
+    <script src="script/pop.js"></script> 
+    <style>
+    .tab-content li a {
+     text-align: left; 
+     display: block; 
+     width: 350px; /* 너비 지정 */
+     white-space: nowrap; /* 자동 줄바꿈 해제 */
+     overflow: hidden; /* 영역 밖 콘텐츠 숨김 */
+     text-overflow: ellipsis; /* 숨겨진 콘텐츠 생략(...) 표기 */
+    }
+    </style>
+</head>
+<body>
+  <div id="skip">
+     <a href="#content">본문 바로가기</a>
+  </div>
+  <div id="header">
+    <div class="inner">
+        <h1 class="logo"><a href="index.html"><img src="images/logo3.png" alt="kpslogo"></a></h1>
+        <ul class="toplink">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="regist.html">회원가입</a></li>
+        </ul> 
+        <!-- gnb메뉴 -->
+        <ul class="gnb">
+            <li class="m1"><a href="sub1.html">회사소개</a>
+                <ul class="sub">
+                  <li><a href="#">CEO</a></li>
+  
+                <li><a href="#">VISION</a></li>
+  
+                <li><a href="#">연혁</a></li>
+  
+                <li><a href="#">조직&인력</a></li>
+  
+                <li><a href="#">주요사업</a></li>
+  
+                 <li><a href="#">채용정보</a></li>
+  
+                <li><a href="#">찾아오시는길</a></li>
+  
+               </ul>
+            </li>
+  
+            <li class="m2"><a href="sub2.html">열린KPS</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">활동분야</a></li>
+  
+                <li><a href="#">지속가능경영</a></li>
+  
+                <li><a href="#">사회공헌</a></li>
+  
+                <li><a href="#">청렴센터</a></li>
+  
+                <li><a href="#">열린 KPS 1번가</a></li>
+  
+              </ul> 
+  
+            </li>
+  
+            <li class="m3"><a href="sub3.html">투자정보</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">재무정보</a></li>
+  
+                <li><a href="#">공시정보</a></li>
+  
+                <li><a href="#">주식정보</a></li>
+  
+                <li><a href="#">주가정보</a></li>
+  
+                <li><a href="#">재무정보</a></li>
+  
+                <li><a href="#">IR자료</a></li>
+  
+              </ul> 
+  
+            </li>
+  
+            <li class="m4"><a href="sub4.html">KPS기술</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">교육훈련</a></li>
+  
+                <li><a href="#">연구개발</a></li>
+  
+                <li><a href="#">특화기술</a></li>
+  
+                <li><a href="#">지식재산권</a></li>
+  
+                <li><a href="#">기술재휴</a></li>
+  
+                <li><a href="#">품질활동</a></li>
+  
+              </ul> 
+  
+            </li>
+  
+            <li class="m5"><a href="sub5.html">고객센터</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">고객현장</a></li>
+  
+                <li><a href="#">고객상담실</a></li>
+  
+                <li><a href="#">공익신고</a></li>
+  
+                <li><a href="#">전자민원센터</a></li>
+  
+                <li><a href="#">입찰정보</a></li>
+  
+                <li><a href="#">KPS옴부즈만</a></li>
+  
+              </ul> 
+  
+            </li>
+  
+            <li class="m6"><a href="sub6.html">e홍보실</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">전자사보</a></li>
+  
+                <li><a href="#">KPS홍보관</a></li>
+  
+                <li><a href="#">KPS뉴스</a></li>
+  
+              </ul>
+  
+            </li>
+  
+            <li class="m7"><a href="sub7.html">정보공개</a>
+  
+              <ul  class="sub">
+  
+                <li><a href="#">정보공개제도</a></li>
+  
+                <li><a href="#">사전정보공개</a></li>
+  
+                <li><a href="#">법무</a></li>
+  
+                <li><a href="#">사규</a></li>
+  
+                <li><a href="#">사규 제·개정예고</a></li>
+  
+                <li><a href="#">사업실명제</a></li>
+  
+              </ul>
+  
+            </li> 
+          </ul><!-- gnb --> 
+
+    </div>
+  </div> <!--header end  -->
+  <div id="visual">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="images/vis01.jpg" alt="v1"></div>
+           <div class="swiper-slide"><img src="images/vis02.jpg" alt="v2"></div>
+           <div class="swiper-slide"><img src="images/vis03.jpg" alt="v3"></div> 
+           <div class="swiper-slide"><img src="images/vis04.jpg" alt="v4"></div> 
+           <div class="swiper-slide"><img src="images/vis02.jpg" alt="v5"></div> 
+          </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+  </div> <!--visual end-->
+  <div id="content">
+   <div class="contWrap">
+     <div class="cont1">
+       <div class="left">
+        <!-- 탭리스트 -->
+         <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">공지사항</li>
+            <li class="tab-link" data-tab="tab-2">보도자료</li>
+
+         </ul>
+        <div id="tab-1" class="tab-content current">
+            <ul>
+                <li class="pop"><a href="#">한전KPS 웹진내용보기</a><span>2024-08-07</span></li>
+                <li><a href="#">2024 전라남도 사회적경제 투자 역량강화 및 시장진출 지원사업 내용입니다 자세히 보기.</a><span>2024-08-07</span></li>
+                <li><a href="#">공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항 알림</a><span>2024-08-07</span></li>
+                <li><a href="#">산업통상자원부 및 산하(공공)기관 공공데이터 이용 활성화 방안 설문조사.</a><span>2024-08-07</span></li>
+                <li><a href="#">한전KPS 공지리스트입니다.</a><span>2024-08-07</span></li>
+            </ul>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <ul>
+                <li><a href="#">한전KPS 보도자료리스트입니다.</a><span>2024-08-07</span></li>
+                <li><a href="#">한전KPS 보도자료리스트입니다.</a><span>2024-08-07</span></li>
+                <li><a href="#">한전KPS 보도자료리스트입니다.</a><span>2024-08-07</span></li>
+                <li><a href="#">한전KPS 보도자료리스트입니다.</a><span>2024-08-07</span></li>
+                <li><a href="#">한전KPS 보도자료리스트입니다.</a><span>2024-08-07</span></li>
+            </ul>
+
+        </div> 
+       </div>
+       <div class="right">
+        <!-- 공고/ 활동실적 리스트 -->
+         <div class="box1">
+            <h3>공고</h3>
+            <ul>
+                <li><a href="#">한전kps 결산공고입니다.</a></li>
+                <li><a href="#">한전kps 결산공고입니다.</a></li>
+                <li><a href="#">한전kps 결산공고입니다.</a></li>
+                <li><a href="#">한전kps 결산공고입니다.</a></li>
+                <li><a href="#">한전kps 결산공고입니다.</a></li>
+            </ul>
+            <p><a href="#"><img src="images/plus.png" alt="더보기"></a></p>
+         </div>
+         <div class="box2">
+            <h3>활동실적</h3>
+            <ul>
+                <li><a href="#">한전kps 실적공고입니다.</a></li>
+                <li><a href="#">한전kps 실적공고입니다.</a></li>
+                <li><a href="#">한전kps 실적공고입니다.</a></li>
+                <li><a href="#">한전kps 실적공고입니다.</a></li>
+                <li><a href="#">한전kps 실적공고입니다.</a></li>
+            </ul>
+            <p><a href="#"><img src="images/plus.png" alt="더보기"></a></p>
+         </div>
+       </div>
+     </div><!-- cont1 end -->
+     <div class="cont2">
+       <a href="#"><img src="images/cont3-1.png" alt="전자사보"></a>
+       <a href="#"><img src="images/cont3-2.png" alt="기업영상"></a>
+       <a href="#"><img src="images/cont3-3.png" alt="경영공시"></a>
+       <a href="#"><img src="images/cont3-4.png" alt="신고센터"></a>
+     </div><!--cont2 end-->
+     <div class="cont3">
+       <div class="lnb">
+         <h2>Quick Menu</h2>
+         <ul class="Quick">
+            <li><a href="#">
+                 <img src="images/cont3_1_img1.png" alt="img1"><p>민원센터</p>
+                </a>
+            </li>
+            <li><a href="#">
+                <img src="images/cont3_2_img2.png" alt="img2"><p>익명신고센터</p>
+               </a>
+            </li>
+            <li><a href="#">
+                <img src="images/cont3_3_img3.png" alt="img3"><p>청렴자료</p>
+               </a>
+           </li>
+           <li><a href="#">
+             <img src="images/cont3_4_img4.png" alt="img4"><p>내부감사</p>
+             </a>
+           </li>
+           <li><a href="#">
+            <img src="images/cont3_5_img5.png" alt="img5"><p>감찰결과</p>
+            </a>
+           </li>
+           <li><a href="#">
+            <img src="images/cont3_6_img6.png" alt="img6"><p>업무추진비</p>
+           </a>
+           </li>
+           <li><a href="#">
+            <img src="images/cont3_7_img7.png" alt="img7"><p>수의계약</p>
+            </a>
+           </li>
+         </ul>
+       </div>
+     </div><!--cont3 end-->
+     <div class="cont4">
+        <div class="boxs">
+            <h3><a href="#">전력설비사업</a></h3>
+            <a href="#">
+                <img src="images/cont4-1_2.png" alt="전력설비사업">
+                <p>한전KPS의 발전설비 장비에 대해 알려드립니다.</p>
+            </a>
+        </div>
+        <div class="boxs">
+            <h3><a href="#">산업설비사업</a></h3>
+            <a href="#">
+                <img src="images/cont4-2_2.png" alt="산업설비사업">
+                <p>한전KPS의 산업설비사업에 대해 알려드립니다.</p>
+            </a>
+        </div>
+        <div class="boxs">
+            <h3><a href="#">해외전력사업</a></h3>
+            <a href="#">
+                <img src="images/cont4-3_2.png" alt="해외전력사업">
+                <p>한전KPS의 해와전력사업에 대해 알려드립니다.</p>
+            </a>
+        </div>
+        <div class="boxs">
+            <h3><a href="#">전기종합기술원</a></h3>
+            <a href="#">
+                <img src="images/cont4-4_2.png" alt="전기종합기술원">
+                <p>한전KPS의 전기종합기술원에 대해 알려드립니다.</p>
+            </a>
+        </div>
+        <div class="boxs">
+            <h3><a href="#">플랜트서비스</a></h3>
+            <a href="#">
+                <img src="images/cont4-5_2.png" alt="플랜트서비스">
+                <p>한전KPS의 플랜트서비스에 대해 알려드립니다.</p>
+            </a>
+        </div>
+     </div><!-- cont4 end-->
+     <div class="cont5 flow_banner">
+          <ul class="list">
+            <li><img src="images/cont6-1.png" alt="1"></li>
+            <li><img src="images/cont6-2.png" alt="2"></li>
+            <li><img src="images/cont6-3.png" alt="3"></li>
+            <li><img src="images/cont6-4.png" alt="4"></li>
+            <li><img src="images/cont6-5.png" alt="5"></li>
+            <li><img src="images/cont6-6.png" alt="6"></li>
+          </ul>
+     </div><!--cont5 end-->
+   </div><!--contWrap end-->
+  </div> <!--content end-->
+  <div id="footer">
+    <div class="contact">
+        <ul>
+            <li><a href="#">찾아오시는길</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이메일무단수집금지</a></li>
+            <li><a href="#">영상정보운영관리방침</a></li>
+            
+        </ul>
+    </div><!-- contact-->
+    <div class="address">
+        <p class="add">
+            전라남도 나주시 문화로 211 빛가람동 한전KPS <br>
+            Tel. 061-345-0114| &copy; 2015 KEPCO KPS. All Rights Reserved
+        </p>
+        <ul class="ficon">
+            <li><a href="#"><img src="images/footer_icon1.png" alt="1"></a></li>
+            <li><a href="#"><img src="images/footer_icon2.png" alt="2"></a></li>
+            <li><a href="#"><img src="images/footer_icon4.png" alt="3"></a></li>
+            <li><a href="#"><img src="images/footer_icon5.jpg" alt="4"></a></li>
+            <li>
+              <p>
+                <a href="http://validator.kldp.org/check?uri=referer"
+                  onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+                  src="http://validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+              </p>
+            </li>
+          </ul>
+    </div>
+  </div> 
+  <div class="popup">
+     <img src="images/pop.jpg" alt="팝업이미지">
+     <input type="checkbox" id="chk">
+     <label for="chk">오늘은 하루동안 이창열지않음.</label>
+     <button class="close">close</button>
+  </div>
+  <!-- Swiper slider JS 추가 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script/swiper.js"></script>
+  <script src="script/banner.js"></script>
+</body>
+</html>
